@@ -1,0 +1,33 @@
+---
+type Props = {
+  title: string
+  description: string
+  href: string
+  picture: string
+  gif: string
+}
+
+const { href, gif, picture, title, description } = Astro.props
+---
+
+<div class="project-card">
+  <img
+    src={picture}
+    alt={`Screenshot du projet ${title}`}
+    class="project-card__hero"
+  />
+  <div class="project-card__content">
+    <img src={gif} alt={`Clip du projet ${title}`} />
+    <p class="project-card__title">{title}</p>
+    <p class="project-card__description">{description}</p>
+  </div>
+  <a href={href}></a>
+</div>
+
+<script></script>
+
+<style>
+  .project-card {
+    position: relative;
+  }
+</style>
