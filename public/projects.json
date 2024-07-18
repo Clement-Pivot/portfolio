@@ -3,7 +3,7 @@
     "title": "Oui",
     "description": "Desc",
     "href": "href",
-    "picture": "/photo_pro.jpg",
-    "gif": "/photo_pro.jpg"
+    "picture": "./photo_pro.jpg",
+    "gif": "./photo_pro.jpg"
   }
 ]
