@@ -1,22 +1,15 @@
 ---
 import Layout from '../layouts/Layout.astro'
+import Nav from '../layouts/Nav.astro'
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Portfolio">
+  <Nav />
   <main>
     <h1>Bonjour, je suis <span class="text-gradient">Clément Pivot</span></h1>
-    <div class="picture__mask">
-      <img
-        class="picture__profile"
-        alt="Mon portrait"
-        src="../../public/photo_pro.jpg"
-      />
+    <div class="picture__profile">
+      <img alt="Mon portrait" src="/photo_pro.jpg" />
     </div>
-    <p class="instructions">
-      To get started, open the directory <code>src/pages</code> in your project.<br
-      />
-      <strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-    </p>
   </main>
 </Layout>
 
@@ -47,29 +40,19 @@ import Layout from '../layouts/Layout.astro'
     background-size: 400%;
     background-position: 0%;
   }
-  .instructions {
-    margin-bottom: 2rem;
-    border: 1px solid rgba(var(--accent-light), 25%);
-    background: linear-gradient(
-      rgba(var(--accent-dark), 66%),
-      rgba(var(--accent-dark), 33%)
-    );
-    padding: 1.5rem;
-    border-radius: 8px;
-  }
   .link-card-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
     gap: 2rem;
     padding: 0;
   }
-  .picture__mask {
+  .picture__profile {
     width: var(--profile-picture-size);
     height: var(--profile-picture-size);
     min-width: var(--profile-picture-size);
     border-radius: 25%;
     overflow: hidden;
-    .picture__profile {
+    img {
       width: var(--profile-picture-size);
       height: var(--profile-picture-size);
       /* transform-origin: top; */
