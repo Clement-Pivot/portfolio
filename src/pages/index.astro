@@ -1,21 +1,69 @@
 ---
+import ProjectCard from '../components/ProjectCard.astro'
 import Layout from '../layouts/Layout.astro'
-import Nav from '../layouts/Nav.astro'
+import projects from '../../public/projects.json'
 ---
 
 <Layout title="Portfolio">
-  <Nav />
-  <main>
-    <h1>Bonjour, je suis <span class="text-gradient">Clément Pivot</span></h1>
+  <header>
+    <h1>
+      Bonjour, je suis <br />
+      <span class="text-gradient">Clément Pivot</span>
+      <br />développeur web
+    </h1>
     <div class="picture__profile">
       <img alt="Mon portrait" src="/photo_pro.jpg" />
     </div>
+  </header>
+  <main>
+    <article>
+      <span class="categorie">À propos de moi</span>
+      <p class="description">
+        Développeur informatique polyvalent spécialisé en création
+        d’applications web surtout en React. Compétent dans les technologies
+        front-end modernes et passionné par la création d’expériences
+        utilisateurs fluides et interactives.
+      </p>
+    </article>
+    <div>
+      PROJETS
+      {
+        projects.map((elem) => (
+          <ProjectCard
+            title={elem.title}
+            description={elem.description}
+            href={elem.href}
+            picture={elem.picture}
+            gif={elem.gif}
+          />
+        ))
+      }
+    </div>
+    <article>
+      <span class="categorie">Contactez moi</span>
+      <a href="mailto:clement.pivot@gmail.com">Par Email</a>
+    </article>
   </main>
+  <footer>
+    <span class="categorie">À propos de moi</span>
+  </footer>
 </Layout>
 
 <style>
   :root {
     --profile-picture-size: 260px;
+  }
+  header {
+    margin: auto;
+    padding: 1rem;
+    width: 800px;
+    max-width: calc(100% - 2rem);
+    color: white;
+    font-size: 20px;
+    line-height: 1.6;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
   main {
     margin: auto;
@@ -25,6 +73,9 @@ import Nav from '../layouts/Nav.astro'
     color: white;
     font-size: 20px;
     line-height: 1.6;
+  }
+  footer {
+    color: white;
   }
   h1 {
     font-size: 4rem;
@@ -55,8 +106,10 @@ import Nav from '../layouts/Nav.astro'
     img {
       width: var(--profile-picture-size);
       height: var(--profile-picture-size);
-      /* transform-origin: top; */
-      /* transform: scale(1.5); */
     }
+  }
+  .categorie {
+    text-align: center;
+    font-size: 24px;
   }
 </style>
