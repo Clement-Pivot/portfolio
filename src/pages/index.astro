@@ -50,34 +50,45 @@ const age =
     </div>
   </header>
   <main>
-    <div>
+    <div id="about-me">
       <span class="categorie">À propos de moi</span>
       <p class="description">
         À {age} ans, je suis actuellement en train d'obtenir mon diplôme de développeur
-        React d'OpenClassRoom.
+        React d'OpenClassRoom. Suite à un BTS Services Informatiques aux Organisations,
+        j'ai acquéri diverses compétences
         <!-- Développeur informatique polyvalent spécialisé en création d’applications
         web surtout en React. Compétent dans les technologies front-end modernes
         et passionné par la création d’expériences utilisateurs fluides et interactives.
         -->
       </p>
     </div>
-    <div>
+    <div id="my-skills">
+      <span class="categorie">Mes compétences</span>
+      <div class="description">HTML, CSS, etc</div>
+    </div>
+    <div id="my-resume">
+      <span class="categorie">Mon parcours</span>
+      <ul class="description--list"></ul>
+    </div>
+    <div id="my-projects">
       <span class="categorie">Mes projets</span>
-      {
-        projects.map((elem) => (
-          <ProjectCard
-            title={elem.title}
-            description={elem.description}
-            href={elem.href}
-            picture={elem.picture}
-            gif={elem.gif}
-            client:load
-          />
-        ))
-      }
+      <div class="my-projects__container">
+        {
+          projects.map((elem) => (
+            <ProjectCard
+              title={elem.title}
+              description={elem.description}
+              href={elem.href}
+              picture={elem.picture}
+              gif={elem.gif}
+              client:load
+            />
+          ))
+        }
+      </div>
     </div>
   </main>
-  <footer>
+  <footer id="contact-me">
     <span class="categorie">Contactez moi</span>
     <a href="mailto:clement.pivot@gmail.com">Par Email</a>
   </footer>
@@ -104,6 +115,7 @@ const age =
   main {
   }
   footer {
+    margin-top: 50px;
   }
   h1 {
     font-size: 4rem;
@@ -121,7 +133,7 @@ const age =
   }
   .hero {
     display: flex;
-    gap: 2rem;
+    gap: 10%;
     display: flex;
     align-items: center;
     svg {
@@ -144,5 +156,11 @@ const age =
     text-align: center;
     font-size: 24px;
     margin: auto;
+  }
+  .my-projects__container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    row-gap: 20px;
   }
 </style>

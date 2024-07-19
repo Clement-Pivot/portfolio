@@ -1,5 +1,5 @@
 :root {
-  --card-collapsed-size: 260px;
+  --card-collapsed-size: 220px;
   --card-full-size: 400px;
   --dialog-gif-size: 600px;
   --displacement: calc(
@@ -24,6 +24,7 @@
 }
 
 .project-card__moving {
+  z-index: 1;
   margin: 10px;
   border-radius: 20px;
   width: var(--card-full-size);
