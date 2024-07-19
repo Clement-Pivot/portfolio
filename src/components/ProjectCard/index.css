@@ -1,41 +1,62 @@
 :root {
   --card-collapsed-size: 260px;
-  --card-full-size: 320px;
+  --card-full-size: 400px;
+  --displacement: calc(
+    (var(--card-collapsed-size) - var(--card-full-size)) / 2
+  );
 }
+
 .project-card {
   position: relative;
-  overflow: hidden;
-  background-color: rgba(255, 255, 255, 0.3);
-  backdrop-filter: blur(5px);
-}
-.project-card__hero {
-  border-radius: 10%;
   width: var(--card-collapsed-size);
   height: var(--card-collapsed-size);
-}
-.project-card__content {
-}
-.project-card:not(:hover) {
-  width: var(--card-collapsed-size);
-  height: var(--card-collapsed-size);
+
   padding: 10px;
-  border-radius: 10%;
-  .project-card__content {
-    display: none;
-  }
+  cursor: pointer;
+  border-radius: 20px;
 }
-.project-card:hover {
-  position: absolute;
+
+.project-card__hero {
+  border-radius: 20px;
+  width: var(--card-collapsed-size);
+  height: var(--card-collapsed-size);
+}
+
+.project-card__moving {
+  margin: 10px;
+  border-radius: 20px;
   width: var(--card-full-size);
   height: var(--card-full-size);
-  .project-card__hero {
+}
+
+.project-card:not(:hover) {
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.3);
+  .project-card__moving {
     display: none;
   }
 }
-.project-card__link {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+
+.project-card:hover {
+  top: var(--displacement);
+  left: var(--displacement);
+  .project-card__hero {
+    visibility: hidden;
+  }
+  .project-card__moving {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.project-card__dialog {
+  width: 40vw;
+  padding: 0;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+}
+
+.project-card__dialog::backdrop {
+  backdrop-filter: blur(5px);
 }
