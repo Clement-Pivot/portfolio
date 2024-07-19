@@ -16,7 +16,6 @@ export function ProjectCard({ href, gif, picture, title, description }: Props) {
 
   const checkClickInModal = (e: MouseEvent<HTMLDialogElement>) => {
     const dialog_rect = dialog_ref!.current!.getBoundingClientRect()
-    console.log(`X : ${e.clientX} Y : ${e.clientY} top : ${dialog_rect.top}`)
     if (
       e.clientX < dialog_rect.left ||
       e.clientX > dialog_rect.right ||
@@ -54,7 +53,7 @@ export function ProjectCard({ href, gif, picture, title, description }: Props) {
         />
         <p className="project-card__title">{title}</p>
         <p className="project-card__description">{description}</p>
-        <a href={href} className="project-card__link">
+        <a href={href} className="project-card__link" target="_blank">
           Lien vers la page github
         </a>
       </dialog>
