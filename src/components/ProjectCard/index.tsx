@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useRef, type MouseEvent } from 'react'
 import './index.css'
 
 type Props = {
@@ -10,11 +10,11 @@ type Props = {
 }
 
 export function ProjectCard({ href, gif, picture, title, description }: Props) {
-  const dialog_ref = useRef(null)
+  const dialog_ref = useRef<HTMLDialogElement>(null)
   const showModal = () => dialog_ref!.current!.showModal()
   const hideModal = () => dialog_ref!.current!.close()
 
-  const checkClickInModal = (e) => {
+  const checkClickInModal = (e: MouseEvent<HTMLDialogElement>) => {
     const dialog_rect = dialog_ref!.current!.getBoundingClientRect()
     console.log(`X : ${e.clientX} Y : ${e.clientY} top : ${dialog_rect.top}`)
     if (
