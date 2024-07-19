@@ -53,9 +53,11 @@ const age =
     <div id="about-me">
       <span class="categorie">À propos de moi</span>
       <p class="description">
-        À {age} ans, je suis actuellement en train d'obtenir mon diplôme de développeur
-        React d'OpenClassRoom. Suite à un BTS Services Informatiques aux Organisations,
-        j'ai acquéri diverses compétences
+        Depuis le lycée l'informatique me passionne et j'ai commencé par suivre
+        les cours du Site du Zéro pour apprendre le C++. À {age} ans, je suis actuellement
+        en train d'obtenir mon diplôme de développeur React d'OpenClassRoom. Suite
+        à un BTS Services Informatiques aux Organisations, j'ai acquéri diverses
+        compétences en développement.
         <!-- Développeur informatique polyvalent spécialisé en création d’applications
         web surtout en React. Compétent dans les technologies front-end modernes
         et passionné par la création d’expériences utilisateurs fluides et interactives.
@@ -73,18 +75,7 @@ const age =
     <div id="my-projects">
       <span class="categorie">Mes projets</span>
       <div class="my-projects__container">
-        {
-          projects.map((elem) => (
-            <ProjectCard
-              title={elem.title}
-              description={elem.description}
-              href={elem.href}
-              picture={elem.picture}
-              gif={elem.gif}
-              client:load
-            />
-          ))
-        }
+        {projects.map((elem) => <ProjectCard {...elem} client:load />)}
       </div>
     </div>
   </main>
@@ -157,7 +148,9 @@ const age =
     font-size: 24px;
     margin: auto;
   }
+
   .my-projects__container {
+    margin-top: 10px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
