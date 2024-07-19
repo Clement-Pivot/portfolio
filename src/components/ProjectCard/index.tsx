@@ -13,6 +13,20 @@ export function ProjectCard({ href, gif, picture, title, description }: Props) {
   const dialog_ref = useRef(null)
   const showModal = () => dialog_ref!.current!.showModal()
   const hideModal = () => dialog_ref!.current!.close()
+
+  const checkClickInModal = (e) => {
+    const dialog_rect = dialog_ref!.current!.getBoundingClientRect()
+    console.log(`X : ${e.clientX} Y : ${e.clientY} top : ${dialog_rect.top}`)
+    if (
+      e.clientX < dialog_rect.left ||
+      e.clientX > dialog_rect.right ||
+      e.clientY < dialog_rect.top ||
+      e.clientY > dialog_rect.bottom
+    ) {
+      hideModal()
+    }
+  }
+
   return (
     <>
       <div className="project-card">
@@ -28,7 +42,11 @@ export function ProjectCard({ href, gif, picture, title, description }: Props) {
           onClick={showModal}
         />
       </div>
-      <dialog className="project-card__dialog" ref={dialog_ref}>
+      <dialog
+        className="project-card__dialog"
+        ref={dialog_ref}
+        onMouseDown={(e) => checkClickInModal(e)}
+      >
         <img
           src={gif}
           alt={`Clip du projet ${title}`}
