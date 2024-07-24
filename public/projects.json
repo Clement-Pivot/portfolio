@@ -4,6 +4,7 @@
     "description": "Desc",
     "href": "href",
     "picture": "./photo_pro.jpg",
-    "gif": "./photo_pro.jpg"
+    "gif": "./photo_pro.jpg",
+    "github": "oui"
   }
 ]

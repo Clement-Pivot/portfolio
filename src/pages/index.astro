@@ -2,6 +2,8 @@
 import { ProjectCard } from '../components/ProjectCard/index.tsx'
 import Layout from '../layouts/Layout.astro'
 import projects from '../../public/projects.json'
+import cursus from '../../public/cursus.json'
+import { CursusCard } from '../components/CursusCard'
 
 const age =
   new Date(
@@ -51,7 +53,7 @@ const age =
   </header>
   <main>
     <div id="about-me">
-      <span class="categorie">À propos de moi</span>
+      <p class="categorie">À propos de moi</p>
       <p class="description">
         Depuis le lycée l'informatique me passionne et j'ai commencé par suivre
         les cours du Site du Zéro pour apprendre le C++. À {age} ans, je suis actuellement
@@ -65,23 +67,53 @@ const age =
       </p>
     </div>
     <div id="my-skills">
-      <span class="categorie">Mes compétences</span>
-      <div class="description">HTML, CSS, etc</div>
+      <p class="categorie">Mes compétences</p>
+      <ul class="description">
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>Javascript</li>
+        <li>TypeScript</li>
+        <li>React</li>
+        <li>Redux</li>
+        <li>Zustand</li>
+        <li>D3</li>
+        <li>Framer-motion</li>
+        <li>Vite</li>
+        <li>VSCode</li>
+        <li>Git</li>
+        <li>Jest</li>
+        <li>Sass</li>
+      </ul>
     </div>
     <div id="my-resume">
-      <span class="categorie">Mon parcours</span>
-      <ul class="description--list"></ul>
+      <p class="categorie">Mon parcours</p>
+      <ul class="description--list">
+        {cursus.map((elem) => <CursusCard {...elem} client:load />)}
+      </ul>
     </div>
     <div id="my-projects">
-      <span class="categorie">Mes projets</span>
+      <p class="categorie">Mes projets</p>
       <div class="my-projects__container">
         {projects.map((elem) => <ProjectCard {...elem} client:load />)}
       </div>
     </div>
   </main>
   <footer id="contact-me">
-    <span class="categorie">Contactez moi</span>
-    <a href="mailto:clement.pivot@gmail.com">Par Email</a>
+    <p class="categorie">Contactez moi</p>
+    <a href="mailto:clement.pivot@gmail.com">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 512 512"
+        class="icon"
+      >
+        <path
+          d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L284 427.7l-68.5 74.1c-8.9 9.7-22.9 12.9-35.2 8.1S160 493.2 160 480l0-83.6c0-4 1.5-7.8 4.2-10.8L331.8 202.8c5.8-6.3 5.6-16-.4-22s-15.7-6.4-22-.7L106 360.8 17.7 316.6C7.1 311.3 .3 300.7 0 288.9s5.9-22.8 16.1-28.7l448-256c10.7-6.1 23.9-5.5 34 1.4z"
+          fill="currentColor"
+        >
+        </path>
+      </svg>
+      Par Email</a
+    >
   </footer>
 </Layout>
 
@@ -155,5 +187,10 @@ const age =
     flex-flow: row wrap;
     justify-content: space-between;
     row-gap: 20px;
+  }
+
+  .icon {
+    width: 64px;
+    height: 64px;
   }
 </style>
