@@ -1,0 +1,20 @@
+---
+interface Props {
+  title: string
+  time: string
+  description: string
+}
+
+const { title, time, description } = Astro.props
+---
+
+<div class="cursus-card">
+  <p class="cursus-card__title">{title}</p>
+  <p class="cursus-card__time">{time}</p>
+  <p class="cursus-card__description">{description}</p>
+</div>
+
+<style>
+  .cursus-card {
+  }
+</style>
