@@ -1,6 +1,6 @@
 [
   {
-    "title": "Développeur Javascript/React RNCP niveau 6",
+    "title": "Développeur Javascript/React RNCP 35976 niveau 6",
     "time": "Juin 2023 - Juillet 2024",
     "description": "Formation en ligne spécialisée dans le développement d'applications web avec React. Acquisition de compétences en JavaScript, React, Redux, et création d'interfaces utilisateur réactives. Formation pratique incluant des projets réels et un mentorat personnalisé pour maîtriser les outils et les meilleures pratiques du développement front-end moderne."
   },
@@ -8,5 +8,10 @@
     "title": "BTS Services Informatiques aux Organisations spécialité Solutions Logicielles et Applications Métier",
     "time": "Septembre 2014 - Juillet 2015",
     "description": "Formation de niveau bac+2 spécialisée en informatique, avec un focus sur les solutions logicielles et applications métiers. Acquisition de compétences en développement de logiciels et applications, administration, sécurité, et support informatique pour les entreprises. "
+  },
+  {
+    "title": "",
+    "time": "",
+    "description": ""
   }
 ]

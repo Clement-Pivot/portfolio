@@ -69,20 +69,31 @@ const age =
     <div id="my-skills">
       <p class="categorie">Mes compétences</p>
       <ul class="description">
-        <li>HTML5</li>
-        <li>CSS3</li>
-        <li>Javascript</li>
-        <li>TypeScript</li>
-        <li>React</li>
-        <li>Redux</li>
-        <li>Zustand</li>
-        <li>D3</li>
-        <li>Framer-motion</li>
-        <li>Vite</li>
-        <li>VSCode</li>
-        <li>Git</li>
-        <li>Jest</li>
-        <li>Sass</li>
+        <li><img src="icons/html.svg" alt="HTML5" class="icon" /></li>
+        <li><img src="icons/css.svg" alt="CSS3" class="icon" /></li>
+        <li>
+          <img src="icons/Javascript.svg" alt="Javascript" class="icon" />
+        </li>
+        <li>
+          <img src="icons/Typescript.svg" alt="TypeScript" class="icon" />
+        </li>
+        <li><img src="icons/react.svg" alt="React" class="icon" /></li>
+        <li>
+          <img src="icons/redux.svg" alt="Redux" class="icon" />
+        </li>
+        <li><img src="icons/zustand.png" alt="Zustand" class="icon" /></li>
+        <li><img src="icons/d3.svg" alt="D3" class="icon" /></li>
+        <li>
+          <img src="icons/framer-motion.svg" alt="Framer-motion" class="icon" />
+        </li>
+        <li><img src="icons/vite.svg" alt="Vite" class="icon" /></li>
+        <li><img src="icons/vscode.svg" alt="VSCode" class="icon" /></li>
+        <li><img src="icons/Git.svg" alt="Git" class="icon" /></li>
+        <li><img src="icons/jest.svg" alt="Jest" class="icon" /></li>
+        <li><img src="icons/sass.png" alt="SASS" class="icon" /></li>
+        <li><img src="icons/figma.svg" alt="Figma" class="icon" /></li>
+        <li><img src="icons/python.svg" alt="Python" class="icon" /></li>
+        <li><img src="icons/django.svg" alt="Django" class="icon" /></li>
       </ul>
     </div>
     <div id="my-resume">
@@ -157,7 +168,7 @@ const age =
   .hero {
     display: flex;
     gap: 10%;
-    display: flex;
+    justify-content: center;
     align-items: center;
     svg {
       width: 64px;
@@ -192,5 +203,13 @@ const age =
   .icon {
     width: 64px;
     height: 64px;
+  }
+
+  #my-skills {
+    ul {
+      display: flex;
+      flex-flow: row wrap;
+      gap: 10px;
+    }
   }
 </style>
