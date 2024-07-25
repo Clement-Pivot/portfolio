@@ -46,10 +46,10 @@ const age =
         -->
       </p>
     </div>
-    <div id="my-skills">
+    <div id="my-skills" class="container">
       <p class="categorie">Mes compétences</p>
-      <div class="container d-flex flex-row">
-        <div class="highlight">
+      <div class="row">
+        <div class="highlight col-md-8 col-12">
           <p class="list-name">Front-End</p>
           <ul class="description">
             <li class="skill">
@@ -118,7 +118,7 @@ const age =
             </li>
           </ul>
         </div>
-        <div class="highlight">
+        <div class="highlight col-md-4 col-12">
           <p class="list-name">Autres</p>
           <ul class="description">
             <li class="skill">
@@ -243,33 +243,32 @@ const age =
     }
 
     #my-skills {
-      .container {
-        .list-name {
-          color: var(--ternary-font-color);
-          text-align: center;
-        }
-        .highlight {
-          background-color: var(--secondary-background-color);
-        }
-        .description {
+      .list-name {
+        color: var(--ternary-font-color);
+        text-align: center;
+      }
+      .highlight {
+        background-color: var(--secondary-background-color);
+      }
+      .description {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 10px;
+        padding: 0;
+        justify-content: space-around;
+        .skill {
           display: flex;
-          flex-flow: row wrap;
-          gap: 20px;
-          padding: 0;
-          .skill {
-            display: flex;
-            flex-flow: column wrap;
-            align-items: center;
-            width: 92px;
-          }
-          .skill-name {
-            display: block;
-            text-align: center;
-            color: var(--secondary-font-color);
-          }
-          .skill-level {
-            color: var(--ternary-font-color);
-          }
+          flex-flow: column wrap;
+          align-items: center;
+          width: 92px;
+        }
+        .skill-name {
+          display: block;
+          text-align: center;
+          color: var(--secondary-font-color);
+        }
+        .skill-level {
+          color: var(--ternary-font-color);
         }
       }
     }
