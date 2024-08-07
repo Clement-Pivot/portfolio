@@ -27,26 +27,30 @@
   z-index: 1;
   border-radius: 20px;
   width: var(--card-full-size);
+  position: absolute;
+  top: -50px;
+  left: -85px;
+  transition: all 0.5s;
+  transform-origin: center;
 }
 
 .project-card:not(:hover) {
   overflow: hidden;
   background-color: rgba(255, 255, 255, 0.3);
   .project-card__moving {
-    display: none;
+    visibility: hidden;
+    transform: scale(0.5);
+    opacity: 0;
   }
 }
 
 .project-card:hover {
-  top: var(--displacement);
-  left: var(--displacement);
   .project-card__hero {
     visibility: hidden;
   }
   .project-card__moving {
-    position: absolute;
-    top: 0;
-    left: 0;
+    transform: scale(1);
+    opacity: 1;
   }
 }
 
