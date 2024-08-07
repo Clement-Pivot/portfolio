@@ -25,10 +25,8 @@
 
 .project-card__moving {
   z-index: 1;
-  margin: 10px;
   border-radius: 20px;
   width: var(--card-full-size);
-  height: var(--card-full-size);
 }
 
 .project-card:not(:hover) {
