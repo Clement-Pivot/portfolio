@@ -1,7 +1,7 @@
 :root {
   --card-collapsed-size: 220px;
   --card-full-size: 400px;
-  --dialog-gif-size: 600px;
+  --dialog-gif-size: 640px;
   --displacement: calc(
     (var(--card-collapsed-size) - var(--card-full-size)) / 2
   );
@@ -53,7 +53,7 @@
 }
 
 .project-card__dialog {
-  width: var(--dialog-gif-size);
+  width: min-content;
   padding: 0;
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 20px;

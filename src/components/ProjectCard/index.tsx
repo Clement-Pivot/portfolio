@@ -43,23 +43,25 @@ export function ProjectCard({
           alt={`Screenshot miniature du projet ${title}`}
           className="project-card__hero"
         />
-        <img
-          src={gif}
-          alt={`Clip miniature du projet ${title}`}
-          className="project-card__moving"
+        <video
+          playsInline
+          autoPlay
+          muted
+          loop
           onClick={showModal}
-        />
+          className="project-card__moving"
+        >
+          <source src={gif} title={`Clip miniature du projet ${title}`} />
+        </video>
       </div>
       <dialog
         className="project-card__dialog"
         ref={dialog_ref}
         onMouseDown={(e) => checkClickInModal(e)}
       >
-        <img
-          src={gif}
-          alt={`Clip du projet ${title}`}
-          className="project-card__show"
-        />
+        <video playsInline autoPlay muted loop className="project-card__show">
+          <source src={gif} title={`Clip du projet ${title}`} />
+        </video>
         <div className="project-card__dialog--content">
           <p className="project-card__title">{title}</p>
           <p className="project-card__description">{description}</p>

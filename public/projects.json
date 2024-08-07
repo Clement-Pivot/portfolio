@@ -1,10 +1,10 @@
 [
   {
     "title": "Fisheye",
-    "description": "Projet d'Openclassrooms pour apprendre l'utilisation de design patterns en Javascript. Le sujet est une plateforme de photographes qui publient leur contenu : photos et vidéos.",
+    "description": "Projet d'Openclassrooms pour apprendre à mettre n place de l'accessibilité et l'utilisation de design patterns en Javascript. Le sujet est une plateforme de photographes qui publient leur contenu : photos et vidéos.",
     "href": "https://malfeitor.github.io/Fisheye/",
     "picture": "projects/fisheye.png",
-    "gif": "",
+    "gif": "projects/fisheye.webm",
     "github": "https://github.com/malfeitor/Fisheye"
   },
   {
