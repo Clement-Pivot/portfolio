@@ -1,10 +1,42 @@
 [
   {
-    "title": "Oui",
-    "description": "Desc",
-    "href": "href",
-    "picture": "./photo_pro.jpg",
-    "gif": "./photo_pro.jpg",
-    "github": "oui"
+    "title": "Fisheye",
+    "description": "",
+    "href": "https://malfeitor.github.io/Fisheye/",
+    "picture": "projects/fisheye.png",
+    "gif": "",
+    "github": "https://github.com/malfeitor/Fisheye"
+  },
+  {
+    "title": "Sportsee",
+    "description": "",
+    "href": "",
+    "picture": "projects/sportsee.png",
+    "gif": "",
+    "github": "https://github.com/malfeitor/sportsee"
+  },
+  {
+    "title": "HRNet",
+    "description": "",
+    "href": "",
+    "picture": "projects/hrnet.png",
+    "gif": "",
+    "github": "https://github.com/malfeitor/HRNet"
+  },
+  {
+    "title": "Les Petits Plats",
+    "description": "",
+    "href": "https://malfeitor.github.io/Les-Petits-Plats/",
+    "picture": "projects/lespetitsplats.png",
+    "gif": "",
+    "github": "https://github.com/malfeitor/Les-Petits-Plats"
+  },
+  {
+    "title": "OhMyFood",
+    "description": "",
+    "href": "https://malfeitor.github.io/ohmyfood/",
+    "picture": "projects/ohmyfood.png",
+    "gif": "",
+    "github": "https://github.com/malfeitor/ohmyfood"
   }
 ]
