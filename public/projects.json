@@ -1,7 +1,7 @@
 [
   {
     "title": "Fisheye",
-    "description": "",
+    "description": "Projet d'Openclassrooms pour apprendre l'utilisation de design patterns en Javascript. Le sujet est une plateforme de photographes qui publient leur contenu : photos et vidéos.",
     "href": "https://malfeitor.github.io/Fisheye/",
     "picture": "projects/fisheye.png",
     "gif": "",
@@ -9,7 +9,7 @@
   },
   {
     "title": "Sportsee",
-    "description": "",
+    "description": "Projet d'Openclassrooms pour apprendre à utiliser une librairie de graphiques, j'ai choisi D3.js. Le sujet est une dashboard sportive.",
     "href": "",
     "picture": "projects/sportsee.png",
     "gif": "",
@@ -17,7 +17,7 @@
   },
   {
     "title": "HRNet",
-    "description": "",
+    "description": "Projet d'Openclassrooms pour apprendre à développer des packages NPM et utiliser un store en React. Le sujet est une plateforme de gestion d'employés.",
     "href": "",
     "picture": "projects/hrnet.png",
     "gif": "",
@@ -25,7 +25,7 @@
   },
   {
     "title": "Les Petits Plats",
-    "description": "",
+    "description": "Projet d'Openclassrooms pour apprendre à faire des recherche dans des recettes, comparer des algorythmes et mettre à jour le DOM.",
     "href": "https://malfeitor.github.io/Les-Petits-Plats/",
     "picture": "projects/lespetitsplats.png",
     "gif": "",
@@ -33,7 +33,7 @@
   },
   {
     "title": "OhMyFood",
-    "description": "",
+    "description": "Projet d'Openclassrooms pour apprendre à mettre en place des animations avec CSS et SASS uniquement.",
     "href": "https://malfeitor.github.io/ohmyfood/",
     "picture": "projects/ohmyfood.png",
     "gif": "",
