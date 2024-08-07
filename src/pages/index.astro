@@ -13,13 +13,13 @@ const age =
 ---
 
 <Layout title="Portfolio">
-  <header class="d-flex align-items-center flex-column">
-    <h1 class="text-center mb-5">
+  <header class="d-flex align-items-center flex-column container-fluid">
+    <h1 class="text-center my-5">
       Bonjour, je suis <br />
       <span class="text-gradient">Clément Pivot</span>
       <br />développeur web
     </h1>
-    <div class="hero d-flex justify-content-center align-items-center">
+    <div class="hero justify-content-center align-items-center container-fluid">
       <a href="https://github.com/malfeitor/" target="_blank">
         <img src="icons/github.svg" alt="Mon profil GitHub" class="icon" />
       </a>
@@ -49,7 +49,7 @@ const age =
     <div id="my-skills" class="container">
       <p class="categorie">Mes compétences</p>
       <div class="row">
-        <div class="highlight col-md-8 col-12">
+        <div class="highlight col-md-8 col-sm-12">
           <p class="list-name">Front-End</p>
           <ul class="description">
             <li class="skill">
@@ -118,7 +118,7 @@ const age =
             </li>
           </ul>
         </div>
-        <div class="highlight col-md-4 col-12">
+        <div class="highlight col-md-4 col-sm-12">
           <p class="list-name">Autres</p>
           <ul class="description">
             <li class="skill">
@@ -215,6 +215,24 @@ const age =
     }
     .hero {
       gap: 10%;
+      display: flex;
+      @media screen and (max-width: 425px) {
+        display: grid;
+        grid-template-areas:
+          'profil profil'
+          'github linkedin';
+        justify-items: center;
+        gap: 10px;
+      }
+      a:first-of-type {
+        grid-area: github;
+      }
+      a:last-of-type {
+        grid-area: linkedin;
+      }
+      div {
+        grid-area: profil;
+      }
     }
     .picture__profile {
       width: var(--profile-picture-size);
@@ -243,12 +261,14 @@ const age =
     }
 
     #my-skills {
+      /* gap: 10px; */
       .list-name {
         color: var(--ternary-font-color);
         text-align: center;
       }
       .highlight {
         background-color: var(--secondary-background-color);
+        /* margin: 10px; */
       }
       .description {
         display: flex;
