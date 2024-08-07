@@ -1,7 +1,7 @@
 [
   {
     "title": "Fisheye",
-    "description": "Projet d'Openclassrooms pour apprendre à mettre en place de l'accessibilité et l'utilisation de design patterns en Javascript. Le sujet est une plateforme de photographes qui publient leur contenu : photos et vidéos.",
+    "description": "Projet d'Openclassrooms pour apprendre à mettre en place de l'accessibilité et l'utilisation de design patterns en Javascript. J'ai mis en place un Factory Pattern pour la création des cartes des médias et un observer pattern qui gère la lightroom. Le sujet est une plateforme de photographes qui publient leur contenu : photos et vidéos.",
     "href": "https://malfeitor.github.io/Fisheye/",
     "picture": "projects/fisheye.png",
     "gif": "projects/fisheye.webm",
@@ -25,7 +25,7 @@
   },
   {
     "title": "Les Petits Plats",
-    "description": "Projet d'Openclassrooms pour apprendre à faire des recherche dans des recettes, comparer des algorythmes et mettre à jour le DOM.",
+    "description": "Projet d'Openclassrooms pour apprendre à faire des recherche dans des recettes, comparer des algorithmes et mettre à jour le DOM.",
     "href": "https://malfeitor.github.io/Les-Petits-Plats/",
     "picture": "projects/lespetitsplats.png",
     "gif": "projects/lespetitsplats.webm",
