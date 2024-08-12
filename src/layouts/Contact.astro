@@ -2,7 +2,17 @@
 
 ---
 
-<form>
-  <label>ICII TEXTE</label>
-  <input />
+<form class="d-flex flex-column col-4" action="#">
+  <label for="name">Nom</label>
+  <input type="text" placeholder="Votre nom" id="name" />
+  <label for="email">Email</label>
+  <input type="email" placeholder="Votre email" id="email" />
+  <label for="message">Message</label>
+  <textarea placeholder="Votre message" id="message"></textarea>
+  <button type="submit" disabled>Envoyer</button>
 </form>
+
+<style>
+  form {
+  }
+</style>
