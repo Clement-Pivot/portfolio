@@ -23,7 +23,6 @@ export function ProjectCard({
   const hideModal = () => dialog_ref!.current!.close()
 
   const checkClickInModal = (e: MouseEvent<HTMLDialogElement>) => {
-    console.log(github)
     const dialog_rect = dialog_ref!.current!.getBoundingClientRect()
     if (
       e.clientX < dialog_rect.left ||

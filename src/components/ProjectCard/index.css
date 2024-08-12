@@ -82,9 +82,3 @@
 .project-card__show {
   width: var(--dialog-gif-size);
 }
-
-#my-skills {
-  .description {
-    list-style: '';
-  }
-}
