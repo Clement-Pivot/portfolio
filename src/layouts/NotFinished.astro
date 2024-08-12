@@ -1,0 +1,29 @@
+---
+
+---
+
+<dialog id="notfinished__dialog">
+  Ce site est en cours de développement, ce n'est pas représentatif de sa
+  version finale.
+  <form method="dialog">
+    <button type="submit" autofocus>OK</button>
+  </form>
+</dialog>
+
+<script>
+  const dialog = document.querySelector('#notfinished__dialog')
+  dialog.showModal()
+</script>
+
+<style>
+  #notfinished__dialog {
+    form {
+      display: flex;
+      padding-top: 10px;
+      justify-content: center;
+    }
+  }
+  #notfinished__dialog::backdrop {
+    backdrop-filter: blur(5px);
+  }
+</style>

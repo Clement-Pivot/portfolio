@@ -6,6 +6,7 @@ import cursus from '../../public/cursus.json'
 import CursusCard from '../components/CursusCard.astro'
 import Contact from '../layouts/Contact.astro'
 import 'bootstrap/dist/css/bootstrap.css'
+import NotFinished from '../layouts/NotFinished.astro'
 
 const age =
   new Date(
@@ -13,6 +14,7 @@ const age =
   ).getFullYear() - 1970
 ---
 
+<NotFinished />
 <Layout title="Portfolio">
   <header class="d-flex align-items-center flex-column container-fluid">
     <h1 class="text-center my-5">
