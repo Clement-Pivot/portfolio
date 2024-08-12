@@ -11,8 +11,10 @@
 </dialog>
 
 <script>
-  const dialog = document.querySelector('#notfinished__dialog')
-  dialog.showModal()
+  if (import.meta.env.MODE !== 'development') {
+    const dialog = document.querySelector('#notfinished__dialog')
+    dialog.showModal()
+  }
 </script>
 
 <style>
