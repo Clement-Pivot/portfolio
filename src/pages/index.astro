@@ -5,10 +5,12 @@ import { ProjectCard } from '../components/ProjectCard/index.tsx'
 import Layout from '../layouts/Layout.astro'
 import projects from '../../public/projects.json'
 import cursus from '../../public/cursus.json'
+import hardskills from '../../public/hardskills.json'
 import CursusCard from '../components/CursusCard.astro'
 import Contact from '../layouts/Contact.astro'
 import NotFinished from '../layouts/NotFinished.astro'
 import SoftSkillCard from '../components/SoftSkillCard.astro'
+import HardSkill from '../components/HardSkill.astro'
 
 const age =
   new Date(
@@ -65,101 +67,21 @@ const age =
         <div class="highlight col-md-8 col-sm-12">
           <p class="list-name">Front-End</p>
           <ul class="description">
-            <li class="skill">
-              <img src="icons/html.svg" alt="" class="icon" />
-              <span class="skill-name">HTML5</span>
-              <span class="skill-level">Avancé</span>
-            </li>
-            <li class="skill">
-              <img src="icons/css.svg" alt="" class="icon" />
-              <span class="skill-name">CSS3</span>
-              <span class="skill-level">Avancé</span>
-            </li>
-            <li class="skill">
-              <img src="icons/Javascript.svg" alt="" class="icon" />
-              <span class="skill-name">Javascript</span>
-              <span class="skill-level">Avancé</span>
-            </li>
-            <li class="skill">
-              <img src="icons/Typescript.svg" alt="" class="icon" />
-              <span class="skill-name">TypeScript</span>
-              <span class="skill-level">Moyen</span>
-            </li>
-            <li class="skill">
-              <img src="icons/react.svg" alt="" class="icon" />
-              <span class="skill-name">React</span>
-              <span class="skill-level">Avancé</span>
-            </li>
-            <li class="skill">
-              <img src="icons/redux.svg" alt="" class="icon" />
-              <span class="skill-name">Redux</span>
-              <span class="skill-level">Bases</span>
-            </li>
-            <li class="skill">
-              <img src="icons/zustand.png" alt="" class="icon" />
-              <span class="skill-name">Zustand</span>
-              <span class="skill-level">Moyen</span>
-            </li>
-            <li class="skill">
-              <img src="icons/d3.svg" alt="" class="icon" />
-              <span class="skill-name">D3js</span>
-              <span class="skill-level">Moyen</span>
-            </li>
-            <li class="skill">
-              <img src="icons/framer-motion.svg" alt="" class="icon" />
-              <span class="skill-name">Framer-Motion</span>
-              <span class="skill-level">Bases</span>
-            </li>
-            <li class="skill">
-              <img src="icons/bootstrap.svg" alt="" class="icon" />
-              <span class="skill-name">Bootstrap</span>
-              <span class="skill-level">Moyen</span>
-            </li>
-            <li class="skill">
-              <img src="icons/sass.png" alt="" class="icon" />
-              <span class="skill-name">SASS</span>
-              <span class="skill-level">Moyen</span>
-            </li>
-            <li class="skill">
-              <img src="icons/figma.svg" alt="" class="icon" />
-              <span class="skill-name">Figma</span>
-              <span class="skill-level">Moyen</span>
-            </li>
+            {
+              hardskills['Front-End'].map((e) => (
+                <HardSkill src={e.src} name={e.name} level={e.level} />
+              ))
+            }
           </ul>
         </div>
         <div class="highlight col-md-4 col-sm-12">
           <p class="list-name">Autres</p>
           <ul class="description">
-            <li class="skill">
-              <img src="icons/vite.svg" alt="" class="icon" />
-              <span class="skill-name">Vite</span>
-              <span class="skill-level">Bases</span>
-            </li>
-            <li class="skill">
-              <img src="icons/vscode.svg" alt="" class="icon" />
-              <span class="skill-name">VSCode</span>
-              <span class="skill-level">Avancé</span>
-            </li>
-            <li class="skill">
-              <img src="icons/Git.svg" alt="" class="icon" />
-              <span class="skill-name">Git</span>
-              <span class="skill-level">Moyen</span>
-            </li>
-            <li class="skill">
-              <img src="icons/jest.svg" alt="" class="icon" />
-              <span class="skill-name">Jest</span>
-              <span class="skill-level">Moyen</span>
-            </li>
-            <li class="skill">
-              <img src="icons/python.svg" alt="" class="icon" />
-              <span class="skill-name">Python</span>
-              <span class="skill-level">Avancé</span>
-            </li>
-            <li class="skill">
-              <img src="icons/django.svg" alt="" class="icon" />
-              <span class="skill-name">Django</span>
-              <span class="skill-level">Moyen</span>
-            </li>
+            {
+              hardskills['Autres'].map((e) => (
+                <HardSkill src={e.src} name={e.name} level={e.level} />
+              ))
+            }
           </ul>
         </div>
       </div>

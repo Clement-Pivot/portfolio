@@ -1,0 +1,96 @@
+{
+  "Front-End": [
+    {
+      "src": "icons/html.svg",
+      "name": "HTML5",
+      "level": "Avancé"
+    },
+    {
+      "src": "icons/css.svg",
+      "name": "CSS3",
+      "level": "Avancé"
+    },
+    {
+      "src": "icons/Javascript.svg",
+      "name": "Javascript",
+      "level": "Avancé"
+    },
+    {
+      "src": "icons/Typescript.svg",
+      "name": "TypeScript",
+      "level": "Moyen"
+    },
+    {
+      "src": "icons/react.svg",
+      "name": "React",
+      "level": "Avancé"
+    },
+    {
+      "src": "icons/redux.svg",
+      "name": "Redux",
+      "level": "Bases"
+    },
+    {
+      "src": "icons/zustand.png",
+      "name": "Zustand",
+      "level": "Moyen"
+    },
+    {
+      "src": "icons/d3.svg",
+      "name": "D3js",
+      "level": "Moyen"
+    },
+    {
+      "src": "icons/framer-motion.svg",
+      "name": "Framer-Motion",
+      "level": "Bases"
+    },
+    {
+      "src": "icons/bootstrap.svg",
+      "name": "Bootstrap",
+      "level": "Moyen"
+    },
+    {
+      "src": "icons/sass.png",
+      "name": "SASS",
+      "level": "Moyen"
+    },
+    {
+      "src": "icons/figma.svg",
+      "name": "Figma",
+      "level": "Moyen"
+    }
+  ],
+  "Autres": [
+    {
+      "src": "icons/vite.svg",
+      "name": "Vite",
+      "level": "Bases"
+    },
+    {
+      "src": "icons/vscode.svg",
+      "name": "VSCode",
+      "level": "Avancé"
+    },
+    {
+      "src": "icons/Git.svg",
+      "name": "Git",
+      "level": "Moyen"
+    },
+    {
+      "src": "icons/jest.svg",
+      "name": "Jest",
+      "level": "Moyen"
+    },
+    {
+      "src": "icons/python.svg",
+      "name": "Python",
+      "level": "Avancé"
+    },
+    {
+      "src": "icons/django.svg",
+      "name": "Django",
+      "level": "Moyen"
+    }
+  ]
+}

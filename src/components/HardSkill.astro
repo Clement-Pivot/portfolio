@@ -1,0 +1,32 @@
+---
+type Props = {
+  src: string
+  name: string
+  level: string
+}
+
+const { src, name, level } = Astro.props
+---
+
+<li class="skill">
+  <img src={src} alt="" class="icon" />
+  <span class="skill-name">{name}</span>
+  <span class="skill-level">{level}</span>
+</li>
+
+<style>
+  .skill {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    width: 92px;
+  }
+  .skill-name {
+    display: block;
+    text-align: center;
+    color: var(--secondary-font-color);
+  }
+  .skill-level {
+    color: var(--ternary-font-color);
+  }
+</style>
