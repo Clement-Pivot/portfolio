@@ -7,6 +7,7 @@ import CursusCard from '../components/CursusCard.astro'
 import Contact from '../layouts/Contact.astro'
 import 'bootstrap/dist/css/bootstrap.css'
 import NotFinished from '../layouts/NotFinished.astro'
+import SoftSkillCard from '../components/SoftSkillCard.astro'
 
 const age =
   new Date(
@@ -38,9 +39,17 @@ const age =
     <div id="about-me">
       <h2 class="categorie">À propos de moi</h2>
       <p class="description col-8 mx-auto">
-        Depuis le lycée l'informatique me passionne et j'ai commencé par suivre
-        les cours du Site du Zéro pour apprendre le C++. À {age} ans, je suis actuellement
-        en train d'obtenir mon diplôme de développeur React d'OpenClassRoom. Suite
+        <div class="container d-flex mx-auto justify-content-evenly row">
+          <SoftSkillCard icon="icons/lightbulb.svg" name="Autonome" />
+          <SoftSkillCard icon="icons/thumbstack.svg" name="Persévérant" />
+          <SoftSkillCard
+            icon="icons/bugslash.svg"
+            name="Résolution de problèmes"
+          />
+        </div>
+        Depuis le lycée l'informatique me passionne et j'ai commencé par suivre les
+        cours du Site du Zéro pour apprendre le C++. À {age} ans, je suis actuellement
+        en train d'obtenir mon diplôme de développeur React d'OpenClassrooms. Suite
         à un BTS Services Informatiques aux Organisations, j'ai acquéri diverses
         compétences en développement.
         <!-- Développeur informatique polyvalent spécialisé en création d’applications
@@ -171,7 +180,7 @@ const age =
   </div>
   <footer id="contact-me" class="mt-5">
     <h2 class="categorie">Contactez moi</h2>
-    <div class="d-flex justify-content-between">
+    <div class="d-flex justify-content-evenly">
       <a href="mailto:clement.pivot@gmail.com">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -204,6 +213,9 @@ const age =
       font-size: 4rem;
       font-weight: 700;
       line-height: 1;
+      @media screen and (max-width: 400px) {
+        font-size: 3rem;
+      }
     }
     .text-gradient {
       background-image: var(--accent-gradient);

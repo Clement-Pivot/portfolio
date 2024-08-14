@@ -1,0 +1,23 @@
+---
+interface Props {
+  icon: string
+  name: string
+}
+
+const { icon, name } = Astro.props
+---
+
+<div class="softskill-card col mx-1">
+  <img src={icon} alt="" />
+  <span>{name}</span>
+</div>
+
+<style>
+  .softskill-card {
+    background-color: blueviolet;
+    img {
+      width: 64px;
+      height: 64px;
+    }
+  }
+</style>
