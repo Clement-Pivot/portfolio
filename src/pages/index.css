@@ -1,0 +1,106 @@
+:root {
+  --profile-picture-size: 260px;
+  --secondary-background-color: #fff;
+  --secondary-font-color: #000;
+  --ternary-font-color: #666;
+}
+.text-justify {
+  text-align: justify;
+}
+h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1;
+  @media screen and (max-width: 400px) {
+    font-size: 3rem;
+  }
+}
+.text-gradient {
+  background-image: var(--accent-gradient);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 400%;
+  background-position: 0%;
+}
+.hero {
+  gap: 10%;
+  display: flex;
+  @media screen and (max-width: 425px) {
+    display: grid;
+    grid-template-areas:
+      'profil profil'
+      'github linkedin';
+    justify-items: center;
+    gap: 10px;
+  }
+  a:first-of-type {
+    grid-area: github;
+  }
+  a:last-of-type {
+    grid-area: linkedin;
+  }
+  div {
+    grid-area: profil;
+  }
+}
+.picture__profile {
+  width: var(--profile-picture-size);
+  height: var(--profile-picture-size);
+  min-width: var(--profile-picture-size);
+  border-radius: 25%;
+  overflow: hidden;
+  img {
+    width: var(--profile-picture-size);
+    height: var(--profile-picture-size);
+  }
+}
+.categorie {
+  text-align: center;
+  font-size: 24px;
+  margin: 10px auto 10px;
+}
+
+.my-projects__container {
+  row-gap: 20px;
+  .project-card {
+    margin: auto;
+  }
+}
+
+.icon {
+  width: 64px;
+  height: 64px;
+}
+
+#my-skills {
+  /* gap: 10px; */
+  .list-name {
+    color: var(--ternary-font-color);
+    text-align: center;
+  }
+  .highlight {
+    background-color: var(--secondary-background-color);
+    /* margin: 10px; */
+  }
+  .description {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+    padding: 0;
+    justify-content: space-around;
+    .skill {
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center;
+      width: 92px;
+    }
+    .skill-name {
+      display: block;
+      text-align: center;
+      color: var(--secondary-font-color);
+    }
+    .skill-level {
+      color: var(--ternary-font-color);
+    }
+  }
+}
