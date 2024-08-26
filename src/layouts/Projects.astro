@@ -11,3 +11,12 @@ import { ProjectCard } from '../components/ProjectCard/index.tsx'
     {projects.map((elem) => <ProjectCard {...elem} client:load />)}
   </div>
 </div>
+
+<style>
+  .my-projects__container {
+    row-gap: 20px;
+    .project-card {
+      margin: auto;
+    }
+  }
+</style>

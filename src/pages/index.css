@@ -1,21 +1,6 @@
-:root {
-  --profile-picture-size: 260px;
-  --secondary-background-color: #fff;
-  --secondary-font-color: #000;
-  --ternary-font-color: #666;
-}
-
 body {
-  background-color: #333;
-}
-
-h1 {
-  font-size: 4rem;
-  font-weight: 700;
-  line-height: 1;
-  @media screen and (max-width: 400px) {
-    font-size: 3rem;
-  }
+  background-color: #222;
+  color: #fff;
 }
 
 .text-gradient {
@@ -26,79 +11,13 @@ h1 {
   background-position: 0%;
 }
 
-.hero {
-  gap: 10%;
-  display: flex;
-  @media screen and (425px <= width) {
-    display: grid;
-    grid-template-areas:
-      'profil profil'
-      'github linkedin';
-    justify-items: center;
-    gap: 10px;
-  }
-  a:first-of-type {
-    grid-area: github;
-  }
-  a:last-of-type {
-    grid-area: linkedin;
-  }
-  div {
-    grid-area: profil;
-  }
-}
-
-.picture__profile {
-  width: var(--profile-picture-size);
-  height: var(--profile-picture-size);
-  min-width: var(--profile-picture-size);
-  border-radius: 25%;
-  overflow: hidden;
-  img {
-    width: var(--profile-picture-size);
-    height: var(--profile-picture-size);
-  }
-}
-
 .categorie {
   text-align: center;
   font-size: 24px;
   margin: 10px auto 10px;
 }
 
-.my-projects__container {
-  row-gap: 20px;
-  .project-card {
-    margin: auto;
-  }
-}
-
 .icon {
   width: 64px;
   height: 64px;
-}
-
-#my-skills {
-  .list-name {
-    color: var(--ternary-font-color);
-    text-align: center;
-  }
-  .highlight {
-    background-color: var(--secondary-background-color);
-  }
-  .description {
-    display: flex;
-    flex-flow: row wrap;
-    gap: 10px;
-    padding: 0;
-    justify-content: space-around;
-  }
-}
-
-.contact-button {
-  background-color: var(--secondary-background-color);
-  height: max-content;
-  width: max-content;
-  padding: 1rem;
-  border-radius: 1rem;
 }

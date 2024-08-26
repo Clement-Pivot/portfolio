@@ -20,3 +20,48 @@
     </a>
   </div>
 </header>
+
+<style>
+  h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1;
+    @media screen and (max-width: 400px) {
+      font-size: 3rem;
+    }
+  }
+
+  .picture__profile {
+    width: var(--profile-picture-size);
+    height: var(--profile-picture-size);
+    min-width: var(--profile-picture-size);
+    border-radius: 25%;
+    overflow: hidden;
+    img {
+      width: var(--profile-picture-size);
+      height: var(--profile-picture-size);
+    }
+  }
+
+  .hero {
+    gap: 10%;
+    display: flex;
+    @media screen and (425px <= width) {
+      display: grid;
+      grid-template-areas:
+        'profil profil'
+        'github linkedin';
+      justify-items: center;
+      gap: 10px;
+    }
+    a:first-of-type {
+      grid-area: github;
+    }
+    a:last-of-type {
+      grid-area: linkedin;
+    }
+    div {
+      grid-area: profil;
+    }
+  }
+</style>
