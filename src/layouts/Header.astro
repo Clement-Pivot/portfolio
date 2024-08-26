@@ -1,5 +1,6 @@
 ---
-
+import github from './public/icons/github.svg?raw'
+import linkedin from './public/icons/linkedin.svg?raw'
 ---
 
 <header class="flex items-center flex-col">
@@ -10,13 +11,15 @@
   </h1>
   <div class="hero justify-content-center align-items-center container-fluid">
     <a href="https://github.com/malfeitor/" target="_blank">
-      <img src="icons/github.svg" alt="Mon profil GitHub" class="icon" />
+      <!-- <img src="icons/github.svg" alt="Mon profil GitHub" class="icon" /> -->
+      <Fragment set:html={github} />
     </a>
     <div class="picture__profile">
       <img alt="Mon portrait" src="./photo_pro.jpg" />
     </div>
     <a href="https://www.linkedin.com/in/clement-pivot/" target="_blank">
-      <img src="icons/linkedin.svg" alt="Mon profil Linkedin" class="icon" />
+      <Fragment set:html={linkedin} />
+      <!-- <img src="icons/linkedin.svg" alt="Mon profil Linkedin" class="icon" /> -->
     </a>
   </div>
 </header>
@@ -46,6 +49,10 @@
   .hero {
     gap: 10%;
     display: flex;
+    svg {
+      width: 64px;
+      height: 64px;
+    }
     @media screen and (425px <= width) {
       display: grid;
       grid-template-areas:
