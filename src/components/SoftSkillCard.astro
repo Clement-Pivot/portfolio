@@ -7,17 +7,19 @@ interface Props {
 const { icon, name } = Astro.props
 ---
 
-<div class="softskill-card col mx-1">
-  <img src={icon} alt="" />
-  <span>{name}</span>
+<div class="softskill-card col mx-1 d-flex p-1 justify-content-center">
+  <Fragment set:html={icon} />
+  <div class="ms-2">{name}</div>
 </div>
 
 <style>
   .softskill-card {
     background-color: blueviolet;
-    img {
-      width: 64px;
-      height: 64px;
+    border-radius: 10px;
+    svg {
+      width: 32px;
+      height: 32px;
+      color: #fff;
     }
   }
 </style>

@@ -12,6 +12,10 @@ import NotFinished from '../layouts/NotFinished.astro'
 import SoftSkillCard from '../components/SoftSkillCard.astro'
 import HardSkill from '../components/HardSkill.astro'
 
+import lightbulb from './public/icons/lightbulb.svg?raw'
+import thumbstack from './public/icons/thumbstack.svg?raw'
+import bugslash from './public/icons/bugslash.svg?raw'
+
 const age =
   new Date(
     new Date().getTime() - new Date(1992, 12, 5).getTime()
@@ -43,12 +47,9 @@ const age =
       <h2 class="categorie">À propos de moi</h2>
       <p class="description col-8 mx-auto">
         <div class="container d-flex mx-auto justify-content-evenly row">
-          <SoftSkillCard icon="icons/lightbulb.svg" name="Autonome" />
-          <SoftSkillCard icon="icons/thumbstack.svg" name="Persévérant" />
-          <SoftSkillCard
-            icon="icons/bugslash.svg"
-            name="Résolution de problèmes"
-          />
+          <SoftSkillCard icon={lightbulb} name="Autonome" />
+          <SoftSkillCard icon={thumbstack} name="Persévérant" />
+          <SoftSkillCard icon={bugslash} name="Résolution de problèmes" />
         </div>
         Depuis le lycée l'informatique me passionne et j'ai commencé par suivre les
         cours du Site du Zéro pour apprendre le C++. À {age} ans, je suis actuellement
