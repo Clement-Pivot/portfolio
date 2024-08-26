@@ -1,0 +1,30 @@
+---
+import hardskills from '../../public/hardskills.json'
+import HardSkill from '../components/HardSkill.astro'
+---
+
+<div id="my-skills" class="container">
+  <h2 class="categorie">Mes compétences</h2>
+  <div class="row">
+    <div class="highlight col-md-8 col-sm-12">
+      <p class="list-name">Front-End</p>
+      <ul class="description">
+        {
+          hardskills['Front-End'].map((e) => (
+            <HardSkill src={e.src} name={e.name} level={e.level} />
+          ))
+        }
+      </ul>
+    </div>
+    <div class="highlight col-md-4 col-sm-12">
+      <p class="list-name">Autres</p>
+      <ul class="description">
+        {
+          hardskills['Autres'].map((e) => (
+            <HardSkill src={e.src} name={e.name} level={e.level} />
+          ))
+        }
+      </ul>
+    </div>
+  </div>
+</div>
