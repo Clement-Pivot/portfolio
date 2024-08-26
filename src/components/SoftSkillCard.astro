@@ -7,9 +7,9 @@ interface Props {
 const { icon, name } = Astro.props
 ---
 
-<div class="softskill-card col mx-1 d-flex p-1 justify-content-center">
+<div class="softskill-card mx-1 flex p-2 justify-center w-full">
   <Fragment set:html={icon} />
-  <div class="ms-2">{name}</div>
+  <div class="ms-2 text-xl font-semibold">{name}</div>
 </div>
 
 <style>
@@ -19,7 +19,7 @@ const { icon, name } = Astro.props
     svg {
       width: 32px;
       height: 32px;
-      color: #fff;
+      color: var(--secondary-background-color);
     }
   }
 </style>

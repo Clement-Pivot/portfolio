@@ -11,21 +11,19 @@ const age =
   ).getFullYear() - 1970
 ---
 
-<div id="about-me">
+<section>
   <h2 class="categorie">À propos de moi</h2>
-  <p class="description col-8 mx-auto">
-    <div class="container flex mx-auto justify-content-evenly row">
-      <SoftSkillCard icon={lightbulb} name="Autonome" />
-      <SoftSkillCard icon={thumbstack} name="Persévérant" />
-      <SoftSkillCard icon={bugslash} name="Résolution de problèmes" />
-    </div>
-    Depuis le lycée l'informatique me passionne et j'ai commencé par suivre les cours
-    du Site du Zéro pour apprendre le C++. À {age} ans, je suis actuellement en train
-    d'obtenir mon diplôme de développeur React d'OpenClassrooms. Suite à un BTS Services
-    Informatiques aux Organisations, j'ai acquéri diverses compétences en développement.
-    <!-- Développeur informatique polyvalent spécialisé en création d’applications
+  <div class="flex mx-auto justify-evenly w-2/3">
+    <SoftSkillCard icon={lightbulb} name="Autonome" />
+    <SoftSkillCard icon={thumbstack} name="Persévérant" />
+    <SoftSkillCard icon={bugslash} name="Résolution de problèmes" />
+  </div>
+  Depuis le lycée l'informatique me passionne et j'ai commencé par suivre les cours
+  du Site du Zéro pour apprendre le C++. À {age} ans, je suis actuellement en train
+  d'obtenir mon diplôme de développeur React d'OpenClassrooms. Suite à un BTS Services
+  Informatiques aux Organisations, j'ai acquéri diverses compétences en développement.
+  <!-- Développeur informatique polyvalent spécialisé en création d’applications
       web surtout en React. Compétent dans les technologies front-end modernes
       et passionné par la création d’expériences utilisateurs fluides et interactives.
       -->
-  </p>
-</div>
+</section>
