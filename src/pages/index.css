@@ -4,9 +4,11 @@
   --secondary-font-color: #000;
   --ternary-font-color: #666;
 }
+
 .text-justify {
   text-align: justify;
 }
+
 h1 {
   font-size: 4rem;
   font-weight: 700;
@@ -15,6 +17,7 @@ h1 {
     font-size: 3rem;
   }
 }
+
 .text-gradient {
   background-image: var(--accent-gradient);
   background-clip: text;
@@ -22,10 +25,11 @@ h1 {
   background-size: 400%;
   background-position: 0%;
 }
+
 .hero {
   gap: 10%;
   display: flex;
-  @media screen and (max-width: 425px) {
+  @media screen and (425px <= width) {
     display: grid;
     grid-template-areas:
       'profil profil'
@@ -43,6 +47,7 @@ h1 {
     grid-area: profil;
   }
 }
+
 .picture__profile {
   width: var(--profile-picture-size);
   height: var(--profile-picture-size);
@@ -54,6 +59,7 @@ h1 {
     height: var(--profile-picture-size);
   }
 }
+
 .categorie {
   text-align: center;
   font-size: 24px;
@@ -87,4 +93,12 @@ h1 {
     padding: 0;
     justify-content: space-around;
   }
+}
+
+.contact-button {
+  background-color: var(--secondary-background-color);
+  height: max-content;
+  width: max-content;
+  padding: 1rem;
+  border-radius: 1rem;
 }
