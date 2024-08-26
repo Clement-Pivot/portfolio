@@ -12,7 +12,9 @@
 
 <script>
   if (import.meta.env.MODE !== 'development') {
-    const dialog = document.querySelector('#notfinished__dialog')
+    const dialog = document.querySelector(
+      '#notfinished__dialog'
+    ) as HTMLDialogElement
     dialog.showModal()
   }
 </script>
