@@ -87,25 +87,26 @@ const age =
         </div>
       </div>
     </div>
+
+    <div id="my-resume">
+      <h2 class="categorie">Mon parcours</h2>
+      <div class="description--list">
+        {cursus.map((elem) => <CursusCard {...elem} />)}
+      </div>
+    </div>
+    <div id="my-projects">
+      <h2 class="categorie">Mes projets</h2>
+      <div
+        class="my-projects__container d-flex flex-wrap flex-row justify-content-between mt-1"
+      >
+        {projects.map((elem) => <ProjectCard {...elem} client:load />)}
+      </div>
+    </div>
   </main>
-  <div id="my-resume">
-    <h2 class="categorie">Mon parcours</h2>
-    <div class="description--list">
-      {cursus.map((elem) => <CursusCard {...elem} />)}
-    </div>
-  </div>
-  <div id="my-projects">
-    <h2 class="categorie">Mes projets</h2>
-    <div
-      class="my-projects__container d-flex flex-wrap flex-row justify-content-between mt-1"
-    >
-      {projects.map((elem) => <ProjectCard {...elem} client:load />)}
-    </div>
-  </div>
-  <footer id="contact-me" class="mt-5">
+  <footer id="contact-me" class="my-5">
     <h2 class="categorie">Contactez moi</h2>
-    <div class="d-flex justify-content-evenly">
-      <a href="mailto:clement.pivot@gmail.com">
+    <div class="d-flex justify-content-evenly row">
+      <a href="mailto:clement.pivot@gmail.com" class="contact-button">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 512 512"

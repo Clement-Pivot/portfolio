@@ -5,8 +5,8 @@
   --ternary-font-color: #666;
 }
 
-.text-justify {
-  text-align: justify;
+body {
+  background-color: #333;
 }
 
 h1 {
