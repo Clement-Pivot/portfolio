@@ -3,11 +3,11 @@ import hardskills from '../../public/hardskills.json'
 import HardSkillIcon from '../components/HardSkillIcon.astro'
 ---
 
-<div id="my-skills" class="container">
+<section id="my-skills">
   <h2 class="categorie">Mes compétences</h2>
-  <div class="row">
-    <div class="highlight col-md-8 col-sm-12">
-      <p class="list-name">Front-End</p>
+  <div class="flex flex-col md:flex-row">
+    <div class="highlight w-full md:w-2/3">
+      <p class="list-name text-center">Front-End</p>
       <ul class="description">
         {
           hardskills['Front-End'].map((e) => (
@@ -16,8 +16,8 @@ import HardSkillIcon from '../components/HardSkillIcon.astro'
         }
       </ul>
     </div>
-    <div class="highlight col-md-4 col-sm-12">
-      <p class="list-name">Autres</p>
+    <div class="highlight w-full md:w-1/3">
+      <p class="list-name text-center">Autres</p>
       <ul class="description">
         {
           hardskills['Autres'].map((e) => (
@@ -27,13 +27,12 @@ import HardSkillIcon from '../components/HardSkillIcon.astro'
       </ul>
     </div>
   </div>
-</div>
+</section>
 
 <style>
   #my-skills {
     .list-name {
       color: var(--ternary-font-color);
-      text-align: center;
     }
     .highlight {
       background-color: var(--secondary-background-color);
