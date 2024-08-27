@@ -8,22 +8,14 @@ type Props = {
 const { src, name, level } = Astro.props
 ---
 
-<li class="skill">
+<li class="skill flex flex-col flex-wrap items-center w-20">
   <img src={src} alt="" class="icon" />
-  <span class="skill-name">{name}</span>
+  <span class="skill-name block text-center">{name}</span>
   <span class="skill-level">{level}</span>
 </li>
 
 <style>
-  .skill {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    width: 92px;
-  }
   .skill-name {
-    display: block;
-    text-align: center;
     color: var(--secondary-font-color);
   }
   .skill-level {
