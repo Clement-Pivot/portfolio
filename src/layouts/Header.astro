@@ -5,13 +5,13 @@ import linkedin from './public/icons/linkedin.svg?raw'
 
 <header class="flex flex-col">
   <h1
-    class="my-5 w-full md:w-full text-6xl md:text-8xl mx-auto text-center mb-10 font-bold"
+    class="mx-auto my-5 mb-10 w-full text-center text-6xl font-bold md:w-full md:text-8xl"
   >
     Bonjour, je suis
     <span class="text-gradient">Clément Pivot</span>
     développeur web
   </h1>
-  <div class="hero grid justify-items-center justify-center items-center gap-2">
+  <div class="hero grid items-center justify-center justify-items-center gap-2">
     <a
       href="https://github.com/malfeitor/"
       target="_blank"
@@ -19,8 +19,8 @@ import linkedin from './public/icons/linkedin.svg?raw'
     >
       <Fragment set:html={github} />
     </a>
-    <div class="picture__profile rounded-3xl overflow-hidden w-64 h-64">
-      <img alt="Mon portrait" src="./photo_pro.jpg" class="w-64 h-64" />
+    <div class="picture__profile h-64 w-64 overflow-hidden rounded-3xl">
+      <img alt="Mon portrait" src="./photo_pro.jpg" class="h-64 w-64" />
     </div>
     <a
       href="https://www.linkedin.com/in/clement-pivot/"
