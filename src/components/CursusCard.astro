@@ -8,13 +8,8 @@ interface Props {
 const { title, time, description } = Astro.props
 ---
 
-<div class="cursus-card">
-  <p class="cursus-card__title">{title}</p>
-  <p class="cursus-card__time">{time}</p>
-  <p class="cursus-card__description">{description}</p>
+<div class="cursus-card p-2">
+  <p class="mb-1 text-xl font-bold">{title}</p>
+  <p class="mb-1 text-lg font-medium">{time}</p>
+  <p class="">{description}</p>
 </div>
-
-<style>
-  .cursus-card {
-  }
-</style>
