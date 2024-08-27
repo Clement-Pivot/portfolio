@@ -3,63 +3,46 @@ import github from './public/icons/github.svg?raw'
 import linkedin from './public/icons/linkedin.svg?raw'
 ---
 
-<header class="flex items-center flex-col">
-  <h1 class="my-5">
-    Bonjour, je suis <br />
+<header class="flex flex-col">
+  <h1
+    class="my-5 w-full md:w-full text-6xl md:text-8xl mx-auto text-center mb-10 font-bold"
+  >
+    Bonjour, je suis
     <span class="text-gradient">Clément Pivot</span>
-    <br />développeur web
+    développeur web
   </h1>
-  <div class="hero justify-content-center align-items-center container-fluid">
-    <a href="https://github.com/malfeitor/" target="_blank">
-      <!-- <img src="icons/github.svg" alt="Mon profil GitHub" class="icon" /> -->
+  <div class="hero grid justify-items-center justify-center items-center gap-2">
+    <a
+      href="https://github.com/malfeitor/"
+      target="_blank"
+      aria-label="Mon profil GitHub"
+    >
       <Fragment set:html={github} />
     </a>
-    <div class="picture__profile">
-      <img alt="Mon portrait" src="./photo_pro.jpg" />
+    <div class="picture__profile rounded-3xl overflow-hidden w-64 h-64">
+      <img alt="Mon portrait" src="./photo_pro.jpg" class="w-64 h-64" />
     </div>
-    <a href="https://www.linkedin.com/in/clement-pivot/" target="_blank">
+    <a
+      href="https://www.linkedin.com/in/clement-pivot/"
+      target="_blank"
+      aria-label="Mon profil LinkedIn"
+    >
       <Fragment set:html={linkedin} />
-      <!-- <img src="icons/linkedin.svg" alt="Mon profil Linkedin" class="icon" /> -->
     </a>
   </div>
 </header>
 
 <style>
-  h1 {
-    font-size: 4rem;
-    font-weight: 700;
-    line-height: 1;
-    @media screen and (max-width: 400px) {
-      font-size: 3rem;
-    }
-  }
-
-  .picture__profile {
-    width: var(--profile-picture-size);
-    height: var(--profile-picture-size);
-    min-width: var(--profile-picture-size);
-    border-radius: 25%;
-    overflow: hidden;
-    img {
-      width: var(--profile-picture-size);
-      height: var(--profile-picture-size);
-    }
-  }
-
   .hero {
-    gap: 10%;
-    display: flex;
+    grid-template-areas:
+      'profil profil'
+      'github linkedin';
     svg {
       width: 64px;
       height: 64px;
     }
-    @media screen and (425px <= width) {
-      display: grid;
-      grid-template-areas:
-        'profil profil'
-        'github linkedin';
-      justify-items: center;
-      gap: 10px;
+    @media screen and (425px < width) {
+      grid-template-areas: 'github profil linkedin';
     }
     a:first-of-type {
       grid-area: github;
