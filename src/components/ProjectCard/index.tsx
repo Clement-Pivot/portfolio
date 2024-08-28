@@ -54,7 +54,7 @@ export function ProjectCard({
         </video>
       </div>
       <dialog
-        className="w-max rounded-2xl bg-white bg-opacity-30 p-0 backdrop:backdrop-blur-sm"
+        className="w-max rounded-2xl bg-white bg-opacity-50 p-0 backdrop:backdrop-blur-sm"
         ref={dialog_ref}
         onMouseDown={(e) => checkClickInModal(e)}
       >
@@ -62,14 +62,14 @@ export function ProjectCard({
           <source src={gif} title={`Clip du projet ${title}`} />
         </video>
         <div className="p-2">
-          <p className="m-0">{title}</p>
+          <p className="m-0 text-lg font-bold">{title}</p>
           <p className="m-0">{description}</p>
           <p className="m-0 flex justify-between">
-            <a href={href} className="project-card__link" target="_blank">
+            <a href={href} className="text-blue-800 underline" target="_blank">
               Lien vers la page du projet
             </a>
             {github && (
-              <a href={github} target="_blank" className="GH-link">
+              <a href={github} target="_blank">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 448 512"
