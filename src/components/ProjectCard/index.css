@@ -1,12 +1,3 @@
-:root {
-  --card-collapsed-size: 220px;
-  --card-full-size: 400px;
-  --dialog-gif-size: 640px;
-  --displacement: calc(
-    (var(--card-collapsed-size) - var(--card-full-size)) / 2
-  );
-}
-
 @keyframes project-card__showing {
   0% {
     opacity: 0;
@@ -21,14 +12,11 @@
 }
 
 .project-card__moving {
-  top: 50%;
-  left: 50%;
   transform: translate(-50%, -50%);
 }
 
 .project-card:not(:hover) {
   overflow: hidden;
-  background-color: rgba(255, 255, 255, 0.3);
   .project-card__moving {
     opacity: 0;
   }
@@ -41,33 +29,4 @@
   .project-card__moving {
     animation: project-card__showing 500ms ease-in-out;
   }
-}
-
-.project-card__dialog {
-  width: max-content;
-  padding: 0;
-  background-color: rgba(255, 255, 255, 0.3);
-  border-radius: 20px;
-}
-.project-card__dialog--content {
-  padding: 10px;
-  p {
-    margin: 0;
-  }
-}
-.project-card__links {
-  display: flex;
-  justify-content: space-between;
-  .GH-link * {
-    width: 32px;
-    height: 32px;
-  }
-}
-
-.project-card__dialog::backdrop {
-  backdrop-filter: blur(5px);
-}
-
-.project-card__show {
-  width: var(--dialog-gif-size);
 }

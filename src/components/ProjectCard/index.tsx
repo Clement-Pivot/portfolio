@@ -36,7 +36,7 @@ export function ProjectCard({
 
   return (
     <>
-      <div className="project-card relative size-56 cursor-pointer rounded-3xl p-2">
+      <div className="project-card relative size-56 cursor-pointer rounded-3xl bg-white bg-opacity-30 p-2">
         <img
           src={picture}
           alt={`Screenshot miniature du projet ${title}`}
@@ -48,23 +48,23 @@ export function ProjectCard({
           muted
           loop
           onClick={showModal}
-          className="project-card__moving absolute z-10 h-auto w-96 max-w-96 rounded-xl"
+          className="project-card__moving absolute inset-1/2 z-10 h-auto w-96 max-w-96 rounded-xl"
         >
           <source src={gif} title={`Clip miniature du projet ${title}`} />
         </video>
       </div>
       <dialog
-        className="project-card__dialog"
+        className="w-max rounded-2xl bg-white bg-opacity-30 p-0 backdrop:backdrop-blur-sm"
         ref={dialog_ref}
         onMouseDown={(e) => checkClickInModal(e)}
       >
-        <video playsInline autoPlay muted loop className="project-card__show">
+        <video playsInline autoPlay muted loop className="w-full">
           <source src={gif} title={`Clip du projet ${title}`} />
         </video>
-        <div className="project-card__dialog--content">
-          <p className="project-card__title">{title}</p>
-          <p className="project-card__description">{description}</p>
-          <p className="project-card__links">
+        <div className="p-2">
+          <p className="m-0">{title}</p>
+          <p className="m-0">{description}</p>
+          <p className="m-0 flex justify-between">
             <a href={href} className="project-card__link" target="_blank">
               Lien vers la page du projet
             </a>
@@ -75,6 +75,7 @@ export function ProjectCard({
                   viewBox="0 0 448 512"
                   role="link"
                   aria-label={`Page GitHub du projet ${title}`}
+                  className="size-8"
                 >
                   <path
                     fill="currentColor"
