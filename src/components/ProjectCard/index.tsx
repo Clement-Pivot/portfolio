@@ -36,11 +36,11 @@ export function ProjectCard({
 
   return (
     <>
-      <div className="project-card">
+      <div className="project-card relative size-56 cursor-pointer rounded-3xl p-2">
         <img
           src={picture}
           alt={`Screenshot miniature du projet ${title}`}
-          className="project-card__hero"
+          className="size-52 rounded-2xl object-cover"
         />
         <video
           playsInline
@@ -48,7 +48,7 @@ export function ProjectCard({
           muted
           loop
           onClick={showModal}
-          className="project-card__moving"
+          className="project-card__moving absolute z-10 h-auto w-96 max-w-96 rounded-xl"
         >
           <source src={gif} title={`Clip miniature du projet ${title}`} />
         </video>
