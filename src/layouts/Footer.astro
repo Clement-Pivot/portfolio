@@ -4,8 +4,11 @@ import ContactForm from '../layouts/ContactForm.astro'
 
 <footer id="contact-me" class="my-5">
   <h2 class="categorie">Contactez moi</h2>
-  <div class="justify-content-evenly row flex">
-    <a href="mailto:clement.pivot@gmail.com" class="contact-button">
+  <div class="row flex justify-evenly">
+    <a
+      href="mailto:clement.pivot@gmail.com"
+      class="contact-button flex size-32 flex-col items-center justify-between"
+    >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 512 512"
@@ -19,7 +22,10 @@ import ContactForm from '../layouts/ContactForm.astro'
       </svg>
       Par Email
     </a>
-    <a href="tel:0663367480" class="contact-button">
+    <a
+      href="tel:0663367480"
+      class="contact-button flex flex-col items-center justify-between"
+    >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 512 512"
@@ -40,8 +46,8 @@ import ContactForm from '../layouts/ContactForm.astro'
 <style>
   .contact-button {
     background-color: var(--secondary-background-color);
-    height: max-content;
-    width: max-content;
+    /* height: max-content;
+    width: max-content; */
     padding: 1rem;
     border-radius: 1rem;
     color: black;
