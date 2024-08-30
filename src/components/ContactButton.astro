@@ -1,0 +1,33 @@
+---
+interface Props {
+  icon: string
+  text: string
+}
+
+const { icon, text } = Astro.props
+---
+
+<a
+  href="mailto:clement.pivot@gmail.com"
+  class="contact-button flex size-32 flex-col items-center justify-between"
+>
+  <Fragment set:html={icon} />
+  {text}
+</a>
+
+<style>
+  .contact-button {
+    background-color: var(--secondary-background-color);
+    /* height: max-content;
+    width: max-content; */
+    padding: 1rem;
+    border-radius: 1rem;
+    color: black;
+  }
+  a:hover {
+    background-image: var(--accent-gradient);
+    background-size: 400%;
+    /* background-clip: ; */
+    /* clip-path:; */
+  }
+</style>
