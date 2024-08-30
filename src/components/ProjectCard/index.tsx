@@ -40,7 +40,7 @@ export function ProjectCard({
         <img
           src={picture}
           alt={`Screenshot miniature du projet ${title}`}
-          className="size-52 rounded-2xl object-cover"
+          className="project-card__static size-52 rounded-2xl object-cover"
         />
         <video
           playsInline

@@ -1,32 +1,22 @@
-@keyframes project-card__showing {
-  0% {
-    opacity: 0;
-    transform: translate(-50%, -50%) scale(0.1);
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    transform: translate(-50%, -50%) scale(1);
-  }
-}
-
-.project-card__moving {
-  transform: translate(-50%, -50%);
-}
-
-.project-card:not(:hover) {
-  overflow: hidden;
+.project-card {
   .project-card__moving {
     opacity: 0;
+    transform: translate(-50%, -50%) scale(0.1);
+    transition:
+      transform 500ms,
+      opacity 250ms;
+  }
+  .project-card__static {
+    transition: transform 1000ms ease;
   }
 }
 
 .project-card:hover {
-  .project-card__hero {
-    visibility: hidden;
-  }
   .project-card__moving {
-    animation: project-card__showing 500ms ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+  .project-card__static {
+    transform: scale(0.1);
   }
 }
