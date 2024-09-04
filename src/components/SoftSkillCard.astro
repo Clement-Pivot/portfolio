@@ -14,12 +14,18 @@ const { icon, name } = Astro.props
 
 <style>
   .softskill-card {
-    background-color: blueviolet;
-    border-radius: 10px;
+    overflow: hidden;
+    border-radius: 50px;
+    background: linear-gradient(145deg, #4f1981, #942ef2);
+    box-shadow:
+      inset 10px 10px 10px rgba(0, 0, 0, 0.2),
+      inset -10px -10px 10px rgba(255, 255, 255, 0.2);
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
     svg {
       width: 32px;
       height: 32px;
       color: var(--secondary-background-color);
+      filter: drop-shadow(5px 5px 5px #000);
     }
   }
 </style>
