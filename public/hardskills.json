@@ -31,11 +31,6 @@
       "level": "Bases"
     },
     {
-      "src": "icons/zustand.png",
-      "name": "Zustand",
-      "level": "Moyen"
-    },
-    {
       "src": "icons/d3.svg",
       "name": "D3js",
       "level": "Moyen"
@@ -62,11 +57,6 @@
     }
   ],
   "Autres": [
-    {
-      "src": "icons/vite.svg",
-      "name": "Vite",
-      "level": "Bases"
-    },
     {
       "src": "icons/vscode.svg",
       "name": "VSCode",

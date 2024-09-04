@@ -9,16 +9,9 @@ const { src, name, level } = Astro.props
 ---
 
 <li class="skill flex w-20 flex-col flex-wrap items-center">
-  <img src={src} alt="" class="icon" />
-  <span class="skill-name block text-center">{name}</span>
-  <span class="skill-level">{level}</span>
+  <img src={src} alt="" class="icon text-white" />
+  <span class="skill-name block text-center font-semibold text-white"
+    >{name}</span
+  >
+  <span class="skill-level text-gray-300">{level}</span>
 </li>
-
-<style>
-  .skill-name {
-    color: var(--secondary-font-color);
-  }
-  .skill-level {
-    color: var(--ternary-font-color);
-  }
-</style>
