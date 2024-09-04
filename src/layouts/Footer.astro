@@ -5,9 +5,12 @@ import email from '../../public/icons/email.svg?raw'
 import phone from '../../public/icons/phone.svg?raw'
 ---
 
-<footer id="contact-me" class="magicpattern my-5 min-h-screen snap-start">
+<footer
+  id="contact-me"
+  class="magicpattern my-5 grid min-h-screen snap-start place-items-center"
+>
   <h2 class="categorie">Contactez moi</h2>
-  <div class="row mb-8 flex justify-evenly">
+  <div class="mb-8 flex flex-col justify-evenly gap-8 md:flex-row">
     <ContactButton
       icon={email}
       text="clement.pivot@gmail.com"
