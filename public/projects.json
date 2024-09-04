@@ -1,5 +1,12 @@
 [
   {
+    "title": "LANPlanner",
+    "description": "Projet personnel, site web collaboratif qui a pour but d'améliorer l'expérience de jeu en groupe en simplifiant la sélection de jeux adaptés au nombre de participants et aux goûts de chacun.",
+    "href": "https://www.malfeitor.duckdns.org/",
+    "picture": "projects/lanplanner.png",
+    "gif": "projects/lanplanner.webm"
+  },
+  {
     "title": "Les Petits Plats",
     "description": "Projet d'Openclassrooms pour apprendre à faire des recherche dans des recettes, comparer des algorithmes et mettre à jour le DOM.",
     "href": "https://malfeitor.github.io/Les-Petits-Plats/",
@@ -38,12 +45,5 @@
     "picture": "projects/hrnet.png",
     "gif": "projects/hrnet.webm",
     "github": "https://github.com/malfeitor/HRNet"
-  },
-  {
-    "title": "LANPlanner",
-    "description": "Projet personnel, site web collaboratif qui a pour but d'améliorer l'expérience de jeu en groupe en simplifiant la sélection de jeux adaptés au nombre de participants et aux goûts de chacun.",
-    "href": "https://www.malfeitor.duckdns.org/",
-    "picture": "projects/lanplanner.png",
-    "gif": "projects/lanplanner.webm"
   }
 ]
