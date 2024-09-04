@@ -3,7 +3,9 @@ import github from '../../public/icons/github.svg?raw'
 import linkedin from '../../public/icons/linkedin.svg?raw'
 ---
 
-<header class="flex flex-col">
+<header
+  class="mx-auto grid min-h-screen w-full snap-start place-items-center md:w-2/3"
+>
   <h1
     class="mx-auto my-5 mb-10 w-full text-center text-6xl font-bold md:w-full md:text-8xl"
   >
@@ -16,6 +18,7 @@ import linkedin from '../../public/icons/linkedin.svg?raw'
       href="https://github.com/malfeitor/"
       target="_blank"
       aria-label="Mon profil GitHub"
+      style="grid-area: github;"
     >
       <Fragment set:html={github} />
     </a>
@@ -26,6 +29,7 @@ import linkedin from '../../public/icons/linkedin.svg?raw'
       href="https://www.linkedin.com/in/clement-pivot/"
       target="_blank"
       aria-label="Mon profil LinkedIn"
+      style="grid-area: linkedin;"
     >
       <Fragment set:html={linkedin} />
     </a>
@@ -43,12 +47,6 @@ import linkedin from '../../public/icons/linkedin.svg?raw'
     }
     @media screen and (425px < width) {
       grid-template-areas: 'github profil linkedin';
-    }
-    a:first-of-type {
-      grid-area: github;
-    }
-    a:last-of-type {
-      grid-area: linkedin;
     }
     div {
       grid-area: profil;
