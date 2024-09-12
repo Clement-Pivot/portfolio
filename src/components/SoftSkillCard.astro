@@ -8,10 +8,10 @@ const { icon, name } = Astro.props
 ---
 
 <div
-  class="softskill-card mx-1 flex w-full justify-center overflow-hidden rounded-full p-2"
+  class="softskill-card mx-1 flex w-full items-center justify-center overflow-hidden rounded-full p-2"
 >
   <Fragment set:html={icon} />
-  <div class="ms-2 text-xl font-semibold">{name}</div>
+  <span class="ms-2 text-xl font-semibold">{name}</span>
 </div>
 
 <style>
