@@ -54,11 +54,17 @@ export function ProjectCard({
         </video>
       </div>
       <dialog
-        className="w-max rounded-2xl bg-white bg-opacity-50 p-0 backdrop:backdrop-blur-sm"
+        className="w-min rounded-2xl bg-white bg-opacity-50 p-0 backdrop:backdrop-blur-sm"
         ref={dialog_ref}
         onMouseDown={(e) => checkClickInModal(e)}
       >
-        <video playsInline autoPlay muted loop className="w-full">
+        <video
+          playsInline
+          autoPlay
+          muted
+          loop
+          className="h-auto max-w-xs md:max-w-max"
+        >
           <source src={gif} title={`Clip du projet ${title}`} />
         </video>
         <div className="p-2">
