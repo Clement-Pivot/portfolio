@@ -2,48 +2,48 @@
   {
     "title": "LANPlanner",
     "description": "Projet personnel, site web collaboratif qui a pour but d'améliorer l'expérience de jeu en groupe en simplifiant la sélection de jeux adaptés au nombre de participants et aux goûts de chacun.",
-    "href": "https://www.malfeitor.duckdns.org/",
+    "href": "https://www.Clement-Pivot.duckdns.org/",
     "picture": "projects/lanplanner.png",
     "gif": "projects/lanplanner.webm"
   },
   {
     "title": "Les Petits Plats",
     "description": "Projet d'Openclassrooms pour apprendre à faire des recherche dans des recettes, comparer des algorithmes et mettre à jour le DOM.",
-    "href": "https://malfeitor.github.io/Les-Petits-Plats/",
+    "href": "https://Clement-Pivot.github.io/Les-Petits-Plats/",
     "picture": "projects/lespetitsplats.png",
     "gif": "projects/lespetitsplats.webm",
-    "github": "https://github.com/malfeitor/Les-Petits-Plats"
+    "github": "https://github.com/Clement-Pivot/Les-Petits-Plats"
   },
   {
     "title": "OhMyFood",
     "description": "Projet d'Openclassrooms pour apprendre à mettre en place des animations avec CSS et SASS uniquement.",
-    "href": "https://malfeitor.github.io/ohmyfood/",
+    "href": "https://Clement-Pivot.github.io/ohmyfood/",
     "picture": "projects/ohmyfood.png",
     "gif": "projects/ohmyfood.webm",
-    "github": "https://github.com/malfeitor/ohmyfood"
+    "github": "https://github.com/Clement-Pivot/ohmyfood"
   },
   {
     "title": "Fisheye",
     "description": "Projet d'Openclassrooms pour apprendre à mettre en place de l'accessibilité et l'utilisation de design patterns en Javascript. J'ai mis en place un Factory Pattern pour la création des cartes des médias et un observer pattern qui gère la lightroom. Le sujet est une plateforme de photographes qui publient leur contenu : photos et vidéos.",
-    "href": "https://malfeitor.github.io/Fisheye/",
+    "href": "https://Clement-Pivot.github.io/Fisheye/",
     "picture": "projects/fisheye.png",
     "gif": "projects/fisheye.webm",
-    "github": "https://github.com/malfeitor/Fisheye"
+    "github": "https://github.com/Clement-Pivot/Fisheye"
   },
   {
     "title": "Sportsee",
     "description": "Projet d'Openclassrooms pour apprendre à utiliser une librairie de graphiques, j'ai choisi D3.js. Le sujet est une dashboard sportive.",
-    "href": "https://github.com/malfeitor/sportsee",
+    "href": "https://github.com/Clement-Pivot/sportsee",
     "picture": "projects/sportsee.png",
     "gif": "projects/sportsee.webm",
-    "github": "https://github.com/malfeitor/sportsee"
+    "github": "https://github.com/Clement-Pivot/sportsee"
   },
   {
     "title": "HRNet",
     "description": "Projet d'Openclassrooms pour apprendre à développer des packages NPM et utiliser un store en React. Le sujet est une plateforme de gestion d'employés.",
-    "href": "https://github.com/malfeitor/HRNet",
+    "href": "https://github.com/Clement-Pivot/HRNet",
     "picture": "projects/hrnet.png",
     "gif": "projects/hrnet.webm",
-    "github": "https://github.com/malfeitor/HRNet"
+    "github": "https://github.com/Clement-Pivot/HRNet"
   }
 ]
