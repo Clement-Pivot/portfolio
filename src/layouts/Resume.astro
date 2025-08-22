@@ -7,8 +7,64 @@ import CursusCard from '../components/CursusCard.astro'
   id="my-resume"
   class="mx-auto grid min-h-screen w-4/5 place-content-center"
 >
-  <h2 class="categorie">Mon parcours</h2>
-  <div class="description--list">
-    {cursus.map((elem) => <CursusCard {...elem} />)}
+  <h2 class="categorie">Expériences</h2>
+  <div class="description--list" id="xps">
+    <h3 class="text-4xl mb-5">Expériences professionnelles</h3>
+    <ul>
+      {cursus['Expériences Professionnelles'].map((elem) => <CursusCard {...elem} />)}
+    </ul>
+  </div>
+  <div class="description--list" id="projets">
+    <h3 class="text-4xl mb-5">Projets</h3>
+    <ul>
+      {cursus['Projet personnel'].map((elem) => <CursusCard {...elem} />)}
+    </ul>
+  </div>
+  <div class="description--list" id="formations">
+    <h3 class="text-4xl mb-5">Formations</h3>
+    <ul>
+      {cursus.Études.map((elem) => <CursusCard {...elem} />)}
+    </ul>
   </div>
 </div>
+
+<style>
+  #my-resume {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    @media (min-width: 768px) {
+      grid-template-areas: 
+      "h2 h2"
+      "xps formation"
+      "projets formation";
+      grid-template-columns: repeat(2, 1fr);
+    }
+    h2 {
+      grid-area: h2;
+    }
+    #xps {
+      grid-area: xps;
+    }
+    #projets {
+      grid-area: projets;
+    }
+    #formations {
+      grid-area: formation;
+    }
+    li {
+      position: relative;
+      border-left: 1px solid #fff;
+    }
+    li::before {
+      content: "";
+      width: 16px;
+      height: 16px;
+      background-color: #fff;
+      border: 1px solid #fff;
+      position: absolute;
+      left: -9px;
+      top: 0;
+      border-radius: 50%;
+    }
+  }
+</style>
