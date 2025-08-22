@@ -15,24 +15,45 @@
     {
       "title": "Bac  Sciences et Technologies de l'Industrie, spécialité électrotechnique",
       "time": "Juillet 2011",
-      "description": "",
+      "description": "Formation technologique axée sur l’électricité, l’électronique et l’automatisation, avec une approche pratique des systèmes industriels et énergétiques.",
       "points": []
     }
   ],
   "Expériences Professionnelles": [
     {
-      "title": "Bac  Sciences et Technologies de l'Industrie, spécialité électrotechnique",
-      "time": "Juillet 2011",
+      "title": "Lifis.fr - Dévelopeur Full-stack",
+      "time": "Janvier 2025 – Juillet 2025 (7 mois)",
       "description": "",
-      "points": []
+      "points": [
+        "Développement de l’API RESTful avec NestJS",
+        "Documentation des APIs avec Swagger (OpenAPI)",
+        "Mise en place et sécurisation des tokens JWT pour l’authentification",
+        "Backend désigné en architecture hexagonale",
+        "Intégration des maquettes Figma dans React",
+        "Communication avec l’API",
+        "Tests unitaires et d’intégrations avec Jest et NightWatch",
+        "Collaboration en méthodologie agile (SCRUM)",
+        "Participation aux code reviews et pair programming",
+        "Rédaction du cahier des charges pour le mode SCI",
+        "Rédaction de la documentation technique"
+      ]
     }
   ],
   "Projet personnel": [
     {
-      "title": "Bac  Sciences et Technologies de l'Industrie, spécialité électrotechnique",
-      "time": "Juillet 2011",
+      "title": "LANRumble.com – SaaS pour la communauté gaming",
+      "time": "2015 - Présent",
       "description": "",
-      "points": []
+      "points": [
+        "Conception d’API RESTful avec Django",
+        "Documentation de l’API avec Swagger (OpenAPI 3)",
+        "Frontend conçu from scratch",
+        "Communication avec l’API",
+        "Gestion de base de données relationnelles",
+        "Responsable du hardware ainsi que du software",
+        "Build de l’image du site avec Docker",
+        "Feedbacks utilisateurs intégrés en itération agile (kanban)"
+      ]
     }
   ]
 }
