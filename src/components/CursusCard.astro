@@ -13,13 +13,26 @@ const { title, time, description, points } = Astro.props
   <h4 class="mb-1 text-xl font-bold">{title}</h4>
   <p class="mb-1 text-lg font-medium">{time}</p>
   <p class="">{description}</p>
-  <ul>{points.map(point => <li>{point}</li>)}</ul>
+  <ul class="cursus-card__points">{points.map(point => <li>{point}</li>)}</ul>
 </li>
 
 <style>
   .cursus-card {
+    position: relative;
+    border-left: 1px solid #fff;
     h4 {
       line-height: 100%;
     }
+  }
+  .cursus-card::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    border: 1px solid #fff;
+    position: absolute;
+    left: -9px;
+    top: 0;
+    border-radius: 50%;
   }
 </style>
