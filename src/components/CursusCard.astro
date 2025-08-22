@@ -3,13 +3,23 @@ interface Props {
   title: string
   time: string
   description: string
+  points: string[]
 }
 
-const { title, time, description } = Astro.props
+const { title, time, description, points } = Astro.props
 ---
 
-<div class="cursus-card p-2">
-  <p class="mb-1 text-xl font-bold">{title}</p>
+<li class="cursus-card p-0 pb-3 pl-3">
+  <h4 class="mb-1 text-xl font-bold">{title}</h4>
   <p class="mb-1 text-lg font-medium">{time}</p>
   <p class="">{description}</p>
-</div>
+  <ul>{points.map(point => <li>{point}</li>)}</ul>
+</li>
+
+<style>
+  .cursus-card {
+    h4 {
+      line-height: 100%;
+    }
+  }
+</style>
