@@ -11,12 +11,13 @@ import HardSkillIcon from '../components/HardSkillIcon.astro'
   <div class="flex w-full flex-col md:flex-row md:gap-10">
     <div
       class="rounded-2xl bg-violet-500 bg-opacity-25 backdrop-blur mx-auto md:p-3"
-    >{Object.values(hardskills).map((list) =>
-      <ul
-        class="flex justify-center gap-3 p-3"
-      >{list.map(e =>
+    >
+      {Object.values(hardskills).map((list) =>
+        <ul class="flex flex-wrap justify-center gap-3 p-3 border-b-2 last:border-none">
+          {list.map(e =>
             <HardSkillIcon src={e.src} name={e.name} level={e.level} />
-          )}</ul>)}
+          )}
+        </ul>)}
       </ul>
     </div>
 </section>
