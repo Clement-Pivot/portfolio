@@ -10,32 +10,13 @@ import HardSkillIcon from '../components/HardSkillIcon.astro'
   <h2 class="categorie w-full">Mes compétences</h2>
   <div class="flex w-full flex-col md:flex-row md:gap-10">
     <div
-      class="w-full rounded-2xl bg-violet-500 bg-opacity-25 backdrop-blur md:w-2/3 md:p-3"
-    >
-      <p class="text-center text-xl md:mb-2">Front-End</p>
+      class="w-full rounded-2xl bg-violet-500 bg-opacity-25 backdrop-blur  md:p-3"
+    >{Object.values(hardskills).map((list) =>
       <ul
         class="grid grid-cols-[repeat(auto-fill,minmax(80px,1fr))] justify-items-center gap-2 p-0"
-      >
-        {
-          hardskills['Front-End'].map((e) => (
+      >{list.map(e =>
             <HardSkillIcon src={e.src} name={e.name} level={e.level} />
-          ))
-        }
+          )}</ul>)}
       </ul>
     </div>
-    <div
-      class="mt-4 w-full rounded-2xl bg-violet-500 bg-opacity-25 backdrop-blur md:mt-0 md:w-1/3 md:p-3"
-    >
-      <p class="text-center text-xl md:mb-2">Autres</p>
-      <ul
-        class="grid grid-cols-[repeat(auto-fill,minmax(80px,1fr))] justify-items-center gap-2 p-0"
-      >
-        {
-          hardskills['Autres'].map((e) => (
-            <HardSkillIcon src={e.src} name={e.name} level={e.level} />
-          ))
-        }
-      </ul>
-    </div>
-  </div>
 </section>
