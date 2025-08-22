@@ -5,7 +5,7 @@ import CursusCard from '../components/CursusCard.astro'
 
 <div
   id="my-resume"
-  class="mx-auto grid min-h-screen w-4/5 place-content-center"
+  class="mx-auto grid min-h-screen w-4/5 place-content-center gap-2"
 >
   <h2 class="categorie">Expériences</h2>
   <div class="description--list" id="xps">
@@ -54,6 +54,14 @@ import CursusCard from '../components/CursusCard.astro'
     }
     #formations {
       grid-area: formation;
+    }
+    .description--list {
+      background-color: rgba(255,255,255,0.2);
+      border-radius: 16px;
+      padding: 10px 0 10px 24px;
+      margin-bottom: 8px;
+      backdrop-filter: blur(3px);
+      height: fit-content;
     }
   }
 </style>
