@@ -31,12 +31,16 @@ import CursusCard from '../components/CursusCard.astro'
 <style>
   #my-resume {
     grid-template-columns: 1fr;
-    grid-template-rows: auto;
+    grid-template-areas: 
+      "h2"
+      "xps"
+      "projets"
+      "formation";
     @media (min-width: 768px) {
       grid-template-areas: 
-      "h2 h2"
-      "xps formation"
-      "projets formation";
+        "h2 h2"
+        "xps formation"
+        "projets formation";
       grid-template-columns: repeat(2, 1fr);
     }
     h2 {
