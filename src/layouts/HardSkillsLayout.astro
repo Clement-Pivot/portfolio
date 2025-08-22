@@ -10,10 +10,10 @@ import HardSkillIcon from '../components/HardSkillIcon.astro'
   <h2 class="categorie w-full">Mes compétences</h2>
   <div class="flex w-full flex-col md:flex-row md:gap-10">
     <div
-      class="w-full rounded-2xl bg-violet-500 bg-opacity-25 backdrop-blur  md:p-3"
+      class="rounded-2xl bg-violet-500 bg-opacity-25 backdrop-blur mx-auto md:p-3"
     >{Object.values(hardskills).map((list) =>
       <ul
-        class="grid grid-cols-[repeat(auto-fill,minmax(80px,1fr))] justify-items-center gap-2 p-0"
+        class="flex justify-center gap-3 p-3"
       >{list.map(e =>
             <HardSkillIcon src={e.src} name={e.name} level={e.level} />
           )}</ul>)}
