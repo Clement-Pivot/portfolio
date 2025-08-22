@@ -1,5 +1,5 @@
 {
-  "Front-End": [
+  "core": [
     {
       "src": "icons/html.svg",
       "name": "HTML5",
@@ -21,10 +21,39 @@
       "level": "Moyen"
     },
     {
+      "src": "icons/python.svg",
+      "name": "Python",
+      "level": "Avancé"
+    }
+  ],
+  "frameworks": [
+    {
       "src": "icons/react.svg",
       "name": "React",
       "level": "Avancé"
     },
+    {
+      "src": "icons/nodeJS.svg",
+      "name": "Node.js",
+      "level": "Moyen"
+    },
+    {
+      "src": "icons/NestJS.svg",
+      "name": "Nest.js",
+      "level": "Avancé"
+    },
+    {
+      "src": "icons/NextJS.svg",
+      "name": "Next.js",
+      "level": "Avancé"
+    },
+    {
+      "src": "icons/django.svg",
+      "name": "Django",
+      "level": "Moyen"
+    }
+  ],
+  "libs": [
     {
       "src": "icons/redux.svg",
       "name": "Redux",
@@ -41,22 +70,17 @@
       "level": "Bases"
     },
     {
-      "src": "icons/bootstrap.svg",
-      "name": "Bootstrap",
+      "src": "icons/jest.svg",
+      "name": "Jest",
       "level": "Moyen"
     },
     {
-      "src": "icons/sass.png",
-      "name": "SASS",
-      "level": "Moyen"
-    },
-    {
-      "src": "icons/figma.svg",
-      "name": "Figma",
+      "src": "icons/nightwatch.svg",
+      "name": "Nightwatch",
       "level": "Moyen"
     }
   ],
-  "Autres": [
+  "tools": [
     {
       "src": "icons/vscode.svg",
       "name": "VSCode",
@@ -68,18 +92,25 @@
       "level": "Moyen"
     },
     {
-      "src": "icons/jest.svg",
-      "name": "Jest",
+      "src": "icons/eslint.svg",
+      "name": "ESLint",
       "level": "Moyen"
     },
     {
-      "src": "icons/python.svg",
-      "name": "Python",
-      "level": "Avancé"
+      "src": "icons/prettier.svg",
+      "name": "Prettier",
+      "level": "Moyen"
     },
     {
-      "src": "icons/django.svg",
-      "name": "Django",
+      "src": "icons/figma.svg",
+      "name": "Figma",
+      "level": "Moyen"
+    }
+  ],
+  "other": [
+    {
+      "src": "icons/PostgreSQL.svg",
+      "name": "PostgreSQL",
       "level": "Moyen"
     }
   ]
