@@ -34,7 +34,7 @@ export function ProjectCard({
     }
   }
 
-  const handleKeyDown = (e: React.KeyboardEvent<HTMLVideoElement>) => {
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLDivElement>) => {
     const capturedKeys = ["Space", "Enter"]
     if(capturedKeys.includes(e.code)) {
       e.preventDefault()
@@ -45,7 +45,11 @@ export function ProjectCard({
 
   return (
     <>
-      <div className="project-card relative size-56 cursor-pointer rounded-3xl bg-white bg-opacity-30 p-2">
+      <div 
+        className="project-card relative size-56 cursor-pointer rounded-3xl bg-white bg-opacity-30 p-2"
+        onKeyDown={handleKeyDown}
+        tabIndex={0}
+      >
         <img
           src={picture}
           alt={`Screenshot miniature du projet ${title}`}
@@ -57,8 +61,6 @@ export function ProjectCard({
           muted
           loop
           onClick={showModal}
-          onKeyDown={handleKeyDown}
-          tabIndex={0}
           className="project-card__moving absolute inset-1/2 z-10 h-auto w-96 max-w-96 rounded-xl"
         >
           <source src={gif} title={`Clip miniature du projet ${title}`} />
